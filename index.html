@@ -1,0 +1,1637 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sahal SACCO | Member-Owned Savings &amp; Credit Cooperative</title>
+  <meta name="description" content="Sahal SACCO is a member-owned savings and credit cooperative promoting ethical saving, financial inclusion, and sustainable economic development in Somalia.">
+  <meta name="keywords" content="Sahal SACCO, Somalia, savings, cooperative, Sharia-compliant, halal finance, financial inclusion">
+
+  <!-- â”€â”€ Favicons (real SACCO favicons) â”€â”€ -->
+  <link rel="icon" type="image/x-icon"          href="assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180"   href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="manifest"                           href="assets/img/favicons/site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com"    rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css"    rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css"                         rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css"     rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css"        rel="stylesheet">
+  <link href="assets/css/main.css"                               rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       SAHAL SACCO â€” BRAND TOKEN SYSTEM
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+    :root {
+      --blue:        #0A3E5C;   /* deep trust blue   */
+      --blue-mid:    #0d4f76;
+      --blue-light:  #e8f0f8;
+      --green:       #1D7A5C;   /* growth green      */
+      --green-light: #E8F3EF;
+      --green-dark:  #155c44;
+      --gray-50:     #f7f9fb;
+      --gray-100:    #eff2f6;
+      --gray-200:    #e0e5ea;
+      --gray-500:    #6b7888;
+      --gray-600:    #4a5662;
+      --gray-900:    #0f1718;
+      --radius:      8px;
+      --radius-lg:   14px;
+      --shadow:      0 4px 16px rgba(10,62,92,.07);
+      --shadow-h:    0 16px 40px rgba(10,62,92,.13);
+      --trans:       all .22s ease;
+    }
+
+    body { font-family: 'Open Sans', sans-serif; }
+
+    /* â”€â”€ Topbar â”€â”€ */
+    .topbar { background: var(--blue) !important; }
+    .topbar a { color: rgba(255,255,255,.82) !important; }
+    .topbar a:hover { color: #fff !important; }
+    .topbar .social-links a { color: rgba(255,255,255,.7) !important; }
+    .topbar .social-links a:hover { color: #fff !important; }
+
+    /* â”€â”€ Brand / nav â”€â”€ */
+    .sitename {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      color: var(--blue) !important;
+      font-size: 1.45rem;
+      letter-spacing: -.01em;
+      display: inline-flex;
+      align-items: baseline;
+      gap: .22rem;
+      line-height: 1;
+    }
+    .sitename .brand-primary { color: #2458F2; }
+    .sitename .brand-secondary { color: var(--green); }
+    .logo img.brand-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+
+    /* â”€â”€ Stats bar â”€â”€ */
+    .stats-bar { background: var(--blue); padding: 56px 0; }
+    .stats-bar .sn {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .stats-bar .sn .purecounter {
+      display: inline-block;
+      min-width: 2ch;
+    }
+    .stats-bar .sl {
+      font-size: .8rem;
+      color: rgba(255,255,255,.75);
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      margin-top: 6px;
+    }
+
+    /* â”€â”€ Reusable card â”€â”€ */
+    .s-card {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      height: 100%;
+      transition: var(--trans);
+    }
+    .s-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--green);
+      box-shadow: var(--shadow-h);
+    }
+    .s-card .ci {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .s-card .ci.green { background: var(--green-light); }
+    .s-card .ci.green i { color: var(--green); font-size: 1.25rem; }
+    .s-card .ci.blue  { background: var(--blue-light); }
+    .s-card .ci.blue  i { color: var(--blue); font-size: 1.25rem; }
+    .s-card h4 { font-size: 1rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px; }
+    .s-card p  { font-size: .855rem; color: var(--gray-600); line-height: 1.65; margin: 0; }
+    .s-card .sub {
+      font-size: .72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .07em; color: var(--green); display: block; margin-bottom: 7px;
+    }
+    .s-card .foot {
+      font-size: .76rem; color: var(--gray-500);
+      border-top: 1px solid var(--gray-200);
+      padding-top: 10px; margin-top: 12px; display: block;
+    }
+
+    /* â”€â”€ Tags â”€â”€ */
+    .tag {
+      display: inline-block; font-size: .7rem; font-weight: 700;
+      border-radius: 4px; padding: 2px 7px; margin: 2px 2px 0 0;
+    }
+    .tg  { background: var(--green-light); color: var(--green); }
+    .tb  { background: var(--blue-light);  color: var(--blue); }
+
+    /* â”€â”€ Trust items â”€â”€ */
+    .t-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      background: #fff; border: 1px solid var(--gray-200);
+      border-radius: 10px; padding: 13px 15px;
+    }
+    .t-item .ico {
+      width: 34px; height: 34px; background: var(--green-light);
+      border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .t-item .ico i { color: var(--green); font-size: .85rem; }
+    .t-item h5 { font-size: .85rem; font-weight: 700; margin-bottom: 2px; }
+    .t-item p  { font-size: .76rem; color: var(--gray-500); margin: 0; }
+
+    /* â”€â”€ Timeline â”€â”€ */
+    .tl { display: flex; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--gray-100); }
+    .tl:last-child { border-bottom: none; }
+    .tl .yr { font-weight: 700; color: var(--blue); min-width: 50px; font-size: .88rem; }
+    .tl .ev { font-size: .85rem; color: var(--gray-600); }
+
+    /* â”€â”€ VM cards (Vision/Mission) â”€â”€ */
+    .vm { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 10px; padding: 20px 16px; height: 100%; }
+    .vm .vl { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--green); display: block; margin-bottom: 8px; }
+    .vm p  { font-size: .855rem; color: var(--gray-600); line-height: 1.65; margin: 0; }
+    .compact-points li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: .88rem;
+      color: var(--gray-600);
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    .compact-points li i {
+      color: var(--green);
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+    .membership-panel {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+    .membership-panel h6 {
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--blue);
+      margin-bottom: 14px;
+    }
+    .membership-benefits li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      color: var(--gray-600);
+      font-size: .88rem;
+      line-height: 1.6;
+    }
+    .membership-benefits li i {
+      color: var(--green);
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    /* â”€â”€ Board cards â”€â”€ */
+    .b-card {
+      background: #fff; border: 1px solid var(--gray-200);
+      border-radius: 10px; padding: 18px 12px; text-align: center;
+      transition: var(--trans); height: 100%;
+    }
+    .b-card:hover { border-color: var(--blue); box-shadow: var(--shadow); }
+    .b-card .av { font-size: 2rem; color: var(--gray-200); margin-bottom: 8px; }
+    .b-card h5  { font-size: .88rem; font-weight: 700; margin-bottom: 3px; }
+    .b-card .rl { font-size: .74rem; color: var(--green); font-weight: 700; margin-bottom: 6px; display: block; }
+    .b-card p   { font-size: .74rem; color: var(--gray-500); margin: 0; line-height: 1.5; }
+    .b-card.sharia { border-color: var(--green-light); }
+    .b-card.sharia .av { color: var(--green-light); }
+
+    /* â”€â”€ Impact cards â”€â”€ */
+    .imp-card {
+      background: #fff; border: 1px solid var(--gray-200); border-radius: 12px;
+      padding: 20px 16px; height: 100%; transition: var(--trans);
+    }
+    .imp-card:hover { border-color: var(--green); box-shadow: var(--shadow-h); }
+    .imp-card .ii { width: 44px; height: 44px; background: var(--green-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+    .imp-card .ii i { color: var(--green); font-size: 1.15rem; }
+    .imp-card h4 { font-size: .9rem; font-weight: 700; margin-bottom: 6px; }
+    .imp-card p  { font-size: .82rem; color: var(--gray-600); line-height: 1.6; }
+    .imp-card .is { border-top: 1px solid var(--gray-200); padding-top: 8px; margin-top: 8px; }
+    .imp-card .isf { font-size: 1.4rem; font-weight: 800; color: var(--green); line-height: 1; }
+    .imp-card .isl { font-size: .72rem; color: var(--gray-500); }
+
+    /* â”€â”€ News cards â”€â”€ */
+    .n-card { background: #fff; border: 1px solid var(--gray-200); border-radius: 10px; padding: 18px; height: 100%; transition: var(--trans); }
+    .n-card:hover { box-shadow: var(--shadow); }
+    .n-card .nm { display: flex; gap: 8px; align-items: center; margin-bottom: 9px; }
+    .n-card .nc { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; background: var(--green-light); color: var(--green); border-radius: 4px; padding: 2px 6px; }
+    .n-card .nd { font-size: .76rem; color: var(--gray-500); }
+    .n-card h5  { font-size: .9rem; font-weight: 700; margin-bottom: 7px; color: var(--gray-900); }
+    .n-card p   { font-size: .82rem; color: var(--gray-600); line-height: 1.6; margin: 0; }
+
+    /* â”€â”€ Featured news â”€â”€ */
+    .fn-card { background: linear-gradient(135deg,#edf4fc 0%,var(--green-light) 100%); border: 1px solid #c5d8e8; border-radius: 14px; padding: 28px; }
+    .fn-card .fc { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--green); margin-right: 10px; }
+    .fn-card .fd { font-size: .78rem; color: var(--gray-500); }
+    .fn-card h3  { font-size: 1.3rem; font-weight: 800; margin: 9px 0; color: var(--gray-900); }
+    .fn-card p   { font-size: .9rem; color: var(--gray-600); line-height: 1.7; margin: 0; }
+
+    /* â”€â”€ Steps â”€â”€ */
+    .stp { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+    .stp .sn { width: 38px; height: 38px; background: var(--blue); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .85rem; flex-shrink: 0; }
+    .stp h5   { font-size: .9rem; font-weight: 700; margin-bottom: 3px; }
+    .stp p    { font-size: .82rem; color: var(--gray-600); margin: 0; }
+
+    /* â”€â”€ Partners grid â”€â”€ */
+    .partner-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .partner-item {
+      background: #fff; border: 1px solid var(--gray-200); border-radius: 12px;
+      padding: 24px 16px; display: flex; align-items: center; justify-content: center;
+      min-height: 100px; transition: var(--trans);
+    }
+    .partner-item:hover { border-color: var(--green); box-shadow: var(--shadow); }
+    .partner-item img { max-height: 64px; max-width: 100%; object-fit: contain; filter: grayscale(30%); transition: var(--trans); }
+    .partner-item:hover img { filter: grayscale(0); }
+    @media(max-width:768px){ .partner-grid { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:480px){ .partner-grid { grid-template-columns: 1fr; } }
+
+    /* â”€â”€ Gov pillars â”€â”€ */
+    .gp { text-align: center; padding: 16px 12px; border: 1px solid var(--gray-200); border-radius: 10px; background: #fff; }
+    .gp .gpi { font-size: 1.4rem; color: var(--blue); margin-bottom: 7px; }
+    .gp h6   { font-size: .82rem; font-weight: 700; margin: 0; }
+
+    /* â”€â”€ Sharia note â”€â”€ */
+    .sh-note { background: var(--green-light); border-left: 4px solid var(--green); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: .82rem; color: #155c44; margin-top: 12px; }
+
+    /* â”€â”€ CTA strip â”€â”€ */
+    .cta-strip { background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%); padding: 64px 0; text-align: center; }
+    .cta-strip h2 { color: #fff; font-family: 'Montserrat',sans-serif; font-size: 1.9rem; font-weight: 800; margin-bottom: 10px; }
+    .cta-strip p  { color: rgba(255,255,255,.82); font-size: 1rem; margin-bottom: 24px; }
+    .btn-w { display: inline-block; background: #fff; color: var(--blue); font-weight: 700; padding: 11px 26px; border-radius: var(--radius); text-decoration: none; margin: 4px; transition: var(--trans); }
+    .btn-w:hover { background: #eee; color: var(--blue); }
+    .btn-o { display: inline-block; background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.6); font-weight: 700; padding: 11px 26px; border-radius: var(--radius); text-decoration: none; margin: 4px; transition: var(--trans); }
+    .btn-o:hover { border-color: #fff; background: rgba(255,255,255,.1); color: #fff; }
+
+    /* â”€â”€ Member story â”€â”€ */
+    .story-box { background: var(--gray-50); border-radius: 14px; padding: 32px; }
+    .story-box blockquote { font-size: 1.05rem; font-weight: 500; color: var(--gray-900); line-height: 1.75; border: none; margin: 0; padding: 0; }
+
+    /* â”€â”€ Hero image â”€â”€ */
+    #hero .hero-img-wrap { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-h); }
+    #hero .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #hero h1 span { color: var(--green); }
+
+    /* â”€â”€ btn-get-started override â”€â”€ */
+    .btn-get-started { background: var(--blue) !important; color: #fff !important; border: none !important; }
+    .btn-get-started:hover { background: var(--blue-mid) !important; }
+    .btn-get-started.outline { background: transparent !important; border: 2px solid var(--blue) !important; color: var(--blue) !important; }
+    .btn-get-started.outline:hover { background: var(--blue) !important; color: #fff !important; }
+
+    /* â”€â”€ Section title accent â”€â”€ */
+    .section-title .description-title { color: var(--blue); }
+
+    /* â”€â”€ Footer overrides â”€â”€ */
+    .footer .sitename { font-size: 1.2rem; }
+
+    /* â”€â”€ About hero image â”€â”€ */
+    .about-hero-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); }
+    .about-hero-img img { width: 100%; height: 340px; object-fit: cover; display: block; }
+
+    /* â”€â”€ Spacing utility â”€â”€ */
+    .section-gap { padding: 72px 0; }
+    .light-bg { background: var(--gray-50); }
+    .section { padding: 72px 0; }
+    .section-title { padding-bottom: 48px; }
+    .section-title p { line-height: 1.25; }
+    @media(max-width:768px){
+      .section { padding: 60px 0; }
+      .section-title { padding-bottom: 36px; }
+      .sitename { font-size: 1.22rem; }
+      .logo img.brand-logo { height: 44px; }
+      .membership-panel { padding: 22px 18px; }
+    }
+
+    /* â”€â”€ Trust footer strip â”€â”€ */
+    .trust-foot { background: var(--blue); padding: 16px 0; }
+    .trust-foot span { color: rgba(255,255,255,.85); font-size: .82rem; }
+    .trust-foot i { margin-right: 5px; color: rgba(255,255,255,.65); }
+
+    /* Premium SACCO polish */
+    body {
+      background: #fff;
+      color: var(--gray-600);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--gray-900);
+    }
+    .header {
+      box-shadow: 0 10px 30px rgba(15, 23, 24, .05);
+    }
+    .header .branding {
+      min-height: 84px;
+      padding: 14px 0;
+    }
+    .header .logo,
+    .footer-brand {
+      gap: 14px;
+    }
+    .logo img.brand-logo {
+      height: 62px;
+      width: auto;
+      object-fit: contain;
+      margin-right: 0;
+      flex-shrink: 0;
+    }
+    .hero {
+      min-height: 86vh;
+      padding: 90px 0 78px;
+      background:
+        linear-gradient(90deg, rgba(7, 27, 45, .70) 0%, rgba(7, 27, 45, .52) 45%, rgba(7, 27, 45, .36) 100%),
+        url("assets/img/hero-bg.jpg") center center / cover no-repeat !important;
+    }
+    .hero:before {
+      background: linear-gradient(180deg, rgba(7, 27, 45, .16) 0%, rgba(7, 27, 45, .04) 100%);
+    }
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-copy {
+      max-width: 620px;
+    }
+    .hero-kicker {
+      font-size: .76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: rgba(255,255,255,.72);
+      margin-bottom: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-kicker::before {
+      content: "";
+      width: 42px;
+      height: 1px;
+      background: rgba(255,255,255,.45);
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 4.6vw, 4.35rem);
+      line-height: 1.08;
+      color: #fff;
+      margin-bottom: 18px;
+      max-width: 12ch;
+    }
+    .hero h1 span {
+      color: #9ad7c2;
+    }
+    .hero p {
+      color: rgba(255,255,255,.86) !important;
+      font-size: 1.05rem !important;
+      line-height: 1.8 !important;
+      margin-bottom: 28px !important;
+      max-width: 56ch !important;
+    }
+    .hero-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .hero-highlights span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.14);
+      color: #fff;
+      font-size: .85rem;
+      backdrop-filter: blur(8px);
+    }
+    .hero-highlights i {
+      color: #9ad7c2;
+    }
+    #hero .hero-img-wrap {
+      position: relative;
+      max-width: 520px;
+      max-height: 460px;
+      margin-inline: auto 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: none;
+      border: 0;
+      background: transparent;
+    }
+    #hero .hero-img-wrap::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 38%;
+      background: linear-gradient(180deg, rgba(7,27,45,0) 0%, rgba(7,27,45,.22) 100%);
+      pointer-events: none;
+    }
+    #hero .hero-img-wrap img {
+      width: 100%;
+      height: min(460px, 62vw);
+      max-height: 460px;
+      object-fit: cover;
+      display: block;
+    }
+    .btn-get-started {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-mid) 100%) !important;
+      color: #fff !important;
+      border: 1px solid transparent !important;
+      border-radius: 999px !important;
+      padding: 13px 28px !important;
+      font-weight: 700 !important;
+      letter-spacing: .02em !important;
+      box-shadow: 0 14px 28px rgba(10,62,92,.18) !important;
+    }
+    .btn-get-started:hover {
+      background: linear-gradient(135deg, var(--blue-mid) 0%, #0b5d8f 100%) !important;
+      transform: translateY(-1px);
+    }
+    .btn-get-started.outline {
+      background: rgba(255,255,255,.08) !important;
+      border: 1px solid rgba(255,255,255,.42) !important;
+      color: #fff !important;
+      box-shadow: none !important;
+    }
+    .btn-get-started.outline:hover {
+      background: rgba(255,255,255,.16) !important;
+      border-color: rgba(255,255,255,.64) !important;
+      color: #fff !important;
+    }
+    .section {
+      padding: 84px 0;
+    }
+    .section-title {
+      padding-bottom: 50px;
+    }
+    .section-title h2 {
+      padding: 9px 18px;
+      font-size: .76rem;
+      letter-spacing: .16em;
+    }
+    .section-title p {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 800;
+    }
+    .eyebrow {
+      font-size: .74rem;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .feature-shell {
+      background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+      border: 1px solid rgba(10,62,92,.08);
+      border-radius: 22px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+    .about-summary {
+      padding-right: 12px;
+    }
+    .about-summary h3,
+    .financing-intro h3,
+    .sectors-intro h3 {
+      font-size: clamp(1.5rem, 2.1vw, 2rem);
+      line-height: 1.22;
+      margin-bottom: 14px;
+    }
+    .about-summary p,
+    .financing-intro p,
+    .sectors-intro p {
+      font-size: .96rem;
+      line-height: 1.8;
+      color: var(--gray-600);
+      margin-bottom: 0;
+    }
+    .mini-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .mini-stat {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: 18px;
+      padding: 18px 20px;
+    }
+    .mini-stat strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.6rem;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .mini-stat span {
+      color: var(--gray-500);
+      font-size: .84rem;
+      line-height: 1.5;
+    }
+    .about-pillars {
+      display: grid;
+      gap: 18px;
+    }
+    .pillar-card {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: 18px;
+      padding: 22px 24px;
+      height: 100%;
+    }
+    .pillar-card .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 1.25rem;
+    }
+    .pillar-card h4 {
+      font-size: 1.04rem;
+      margin-bottom: 8px;
+    }
+    .pillar-card p {
+      color: var(--gray-600);
+      line-height: 1.75;
+      font-size: .9rem;
+      margin-bottom: 0;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .value-chip {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .value-chip i {
+      color: var(--green);
+      font-size: 1rem;
+      margin-top: 2px;
+    }
+    .value-chip strong {
+      display: block;
+      font-size: .92rem;
+      margin-bottom: 4px;
+      color: var(--gray-900);
+    }
+    .value-chip span {
+      display: block;
+      color: var(--gray-500);
+      font-size: .82rem;
+      line-height: 1.55;
+    }
+    .s-card {
+      border-radius: 20px;
+      padding: 28px 24px;
+      border: 1px solid rgba(10,62,92,.10);
+      box-shadow: 0 12px 26px rgba(10,62,92,.04);
+    }
+    .s-card h4 {
+      font-size: 1.08rem;
+      margin-bottom: 10px;
+    }
+    .s-card .benefit {
+      display: block;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--gray-200);
+      font-size: .82rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+    .s-card .benefit strong {
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .product-card .ci,
+    .finance-card .ci,
+    .sector-card .ci {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      margin-bottom: 18px;
+    }
+    .product-card .tagline,
+    .finance-card .tagline,
+    .sector-card .tagline {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-size: .72rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 700;
+      color: var(--green);
+    }
+    .finance-intro,
+    .sectors-intro {
+      padding-bottom: 8px;
+    }
+    .highlight-note {
+      background: linear-gradient(135deg, #edf7f2 0%, #f8fbfd 100%);
+      border: 1px solid #c9e4d8;
+      border-radius: 20px;
+      padding: 24px;
+      height: 100%;
+    }
+    .highlight-note .sub {
+      margin-bottom: 10px;
+    }
+    .highlight-note p {
+      color: var(--gray-600);
+      line-height: 1.75;
+      margin-bottom: 0;
+      font-size: .9rem;
+    }
+    .footer .sitename {
+      font-size: 1.28rem;
+    }
+    .footer-brand-logo {
+      height: 46px;
+      width: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .footer h4 {
+      margin-bottom: 16px;
+    }
+    .footer-links ul li {
+      padding: 8px 0;
+    }
+    @media(max-width:768px){
+      .logo img.brand-logo { height: 52px; }
+      .hero {
+        min-height: auto;
+        padding: 74px 0 58px;
+      }
+      .hero h1 { max-width: none; }
+      .hero-highlights { gap: 10px; }
+      #hero .hero-img-wrap { margin-inline: auto; }
+      #hero .hero-img-wrap img { height: min(400px, 76vw); }
+      .feature-shell { padding: 26px 22px; }
+      .mini-stat-grid,
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HEADER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <header id="header" class="header sticky-top">
+
+    <!-- Top bar -->
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:info@sahalsacco.com">info@sahalsacco.com</a>
+          </i>
+          <i class="bi bi-phone d-flex align-items-center ms-4">
+            <span>+252 613888618</span>
+          </i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branding + Nav -->
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+        <a href="#hero" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.webp" alt="Sahal SACCO Logo" class="brand-logo">
+          <span class="sitename"><span class="brand-primary">Sahal</span> <span class="brand-secondary">SACCO</span></span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#financing">Financing</a></li>
+            <li class="dropdown">
+              <a href="#"><span>More</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#sectors">Sectors</a></li>
+                <li><a href="#investment">Investment</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#board">Leadership</a></li>
+                <li><a href="#news">News</a></li>
+              </ul>
+            </li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header><!-- /Header -->
+
+  <main class="main">
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section id="hero" class="hero section light-background">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <div class="hero-copy">
+              <span class="hero-kicker">Member-Owned Cooperative | Est. 2024</span>
+              <h1>Together we invest, <span>together we grow</span></h1>
+              <p>
+                Sahal SACCO is a member-owned savings and credit cooperative delivering ethical savings, financing, and investment solutions for families, traders, and entrepreneurs across Somalia.
+              </p>
+              <!-- Hero highlights removed as per request -->
+            </div>
+            <div class="d-flex flex-column flex-md-row gap-3 mt-3 justify-content-center align-items-center">
+              <a href="#membership" class="btn-get-started">Become a Member</a>
+              <a href="#investment" class="btn-get-started outline">Invest with Us</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-out" data-aos-delay="200">
+            <div class="hero-img-wrap">
+              <img src="assets/img/hero-home.webp" alt="SACCO staff assisting customers in a modern office reception" class="img-fluid" loading="eager" fetchpriority="high">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• STATS BAR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3"><div class="sn"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1.4" data-purecounter-once="true"></span>+</div><div class="sl">Active Members</div></div>
+          <div class="col-6 col-md-3"><div class="sn">$<span class="purecounter" data-purecounter-start="0" data-purecounter-end="251" data-purecounter-duration="1.6" data-purecounter-once="true"></span>K</div><div class="sl">Savings Mobilized</div></div>
+          <div class="col-6 col-md-3"><div class="sn"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1.2" data-purecounter-once="true"></span></div><div class="sl">Sectors Financed</div></div>
+          <div class="col-6 col-md-3"><div class="sn"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="2024" data-purecounter-duration="1.8" data-purecounter-once="true"></span></div><div class="sl">Year Founded</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CORE VALUES (Featured Services) â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="featured-services" class="featured-services section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-file-earmark-check icon"></i></div>
+              <h4>Transparency</h4>
+              <p>Full visibility into how member funds are managed, invested, and distributed.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-shield-check icon"></i></div>
+              <h4>Sharia Integrity</h4>
+              <p>All products are Sharia-compliant. No riba (interest). Supervised by an independent Sharia Board.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-people icon"></i></div>
+              <h4>Financial Inclusion</h4>
+              <p>Bringing ethical finance to underserved Somali communities â€” the unbanked and micro-entrepreneur.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-graph-up-arrow icon"></i></div>
+              <h4>Shared Prosperity</h4>
+              <p>Profits shared among all members. When the cooperative grows, every member-owner benefits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section id="about" class="about section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-8 text-center mb-4">
+            <h3 style="color:#0A3E5C;font-weight:700;">Who We Are</h3>
+            <p style="font-size:1.1rem;max-width:600px;margin:0 auto 1.5rem auto;">
+              <span style="color:#1D7A5C;font-weight:600;">Sahal SACCO</span> is a member-owned savings and credit cooperative established to promote ethical saving, financial inclusion, entrepreneurship, and sustainable economic development in Somalia.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-stretch g-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-5 mb-3 mb-md-0 d-flex align-items-stretch">
+            <div class="card shadow-sm w-100 text-center p-4" style="border-radius:16px;">
+              <div style="margin-bottom:1rem;">
+                <span style="display:inline-block;background:#E8F3EF;border-radius:50%;padding:18px;">
+                  <i class="bi bi-eye" style="font-size:2.2rem;color:#1D7A5C;"></i>
+                </span>
+              </div>
+              <h4 style="color:#0A3E5C;font-weight:700;">Vision</h4>
+              <p style="font-size:1.05rem;">To become the leading Sharia-compliant SACCO in Somalia</p>
+            </div>
+          </div>
+          <div class="col-md-5 d-flex align-items-stretch">
+            <div class="card shadow-sm w-100 text-center p-4" style="border-radius:16px;">
+              <div style="margin-bottom:1rem;">
+                <span style="display:inline-block;background:#E8F3EF;border-radius:50%;padding:18px;">
+                  <i class="bi bi-bullseye" style="font-size:2.2rem;color:#1D7A5C;"></i>
+                </span>
+              </div>
+              <h4 style="color:#0A3E5C;font-weight:700;">Mission</h4>
+              <p style="font-size:1.05rem;">
+                To provide accessible, inclusive, and Sharia-compliant financing and investment services to individuals, SMEs, cooperatives, and groups across Somalia, while promoting saving culture, entrepreneurship, financial literacy, and long-term economic stability.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6 text-center">
+            <div style="background:#E8F3EF;border-radius:12px;padding:1rem 0.5rem;">
+              <i class="bi bi-envelope" style="font-size:1.5rem;color:#1D7A5C;"></i>
+              <span style="font-size:1.08rem;font-weight:600;color:#0A3E5C;margin-left:8px;">Our E-mail</span>
+              <div style="font-size:1.05rem;color:#1D7A5C;">info@sahalsacco.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PARTNERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="partners" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Partners</h2>
+        <p><span>Our Trusted</span> <span class="description-title">Partners</span></p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-center text-muted mb-5" style="font-size:.9rem;">
+          Working alongside leading institutions to expand financial access across Somalia.
+        </p>
+        <div class="partner-grid">
+          <div class="partner-item">
+            <img src="assets/img/partners/osob.jpeg" alt="Osob Microfinance">
+          </div>
+          <div class="partner-item">
+            <img src="assets/img/partners/wazaarada.jpeg" alt="Ministry of Commerce and Industry">
+          </div>
+          <div class="partner-item">
+            <img src="assets/img/partners/udhis.jpeg" alt="UDHIS Somali Union Cooperatives Movement">
+          </div>
+        </div>
+        <div class="row g-3 mt-3 justify-content-center text-center" style="font-size:.78rem;color:var(--gray-500);">
+          <div class="col-4">Osob Microfinance</div>
+          <div class="col-4">Ministry of Commerce &amp; Industry</div>
+          <div class="col-4">UDHIS â€” Somali Union Cooperatives</div>
+        </div>
+      </div>
+    </section><!-- /Partners -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PRODUCTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section id="products" class="services section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Products</h2>
+        <p><span>Member-Focused</span> <span class="description-title">Financial Solutions</span></p>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="s-card product-card w-100">
+              <div class="ci green"><i class="fas fa-store"></i></div>
+              <span class="tagline">Micro trade support</span>
+              <h4>Fursad</h4>
+              <p>Profit-free daily financing that helps micro-entrepreneurs restock and keep small trading activity moving.</p>
+              <span class="benefit"><strong>Key benefit:</strong> Access quick working support without markup pressure.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
+            <div class="s-card product-card w-100">
+              <div class="ci green"><i class="fas fa-chart-line"></i></div>
+              <span class="tagline">Goal-based business growth</span>
+              <h4>Tooko + Muraabaxa</h4>
+              <p>A structured save-to-finance pathway where members build capital first, then unlock Murabaha support for business assets.</p>
+              <span class="benefit"><strong>Key benefit:</strong> Turns disciplined saving into faster access to ethical business financing.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="s-card product-card w-100">
+              <div class="ci green"><i class="fas fa-user-group"></i></div>
+              <span class="tagline">Women-focused finance</span>
+              <h4>Haween Kaab</h4>
+              <p>Savings and business financing tailored for women, backed by guidance and financial literacy support.</p>
+              <span class="benefit"><strong>Key benefit:</strong> Expands access to capital for women-led livelihoods and enterprises.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
+            <div class="s-card product-card w-100">
+              <div class="ci green"><i class="fas fa-rocket"></i></div>
+              <span class="tagline">SME expansion</span>
+              <h4>Kobciye</h4>
+              <p>Growth-oriented financing for established small and medium enterprises ready to expand operations or capacity.</p>
+              <span class="benefit"><strong>Key benefit:</strong> Supports scaling businesses with structured, Sharia-compliant financing.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="s-card product-card w-100">
+              <div class="ci green"><i class="fas fa-piggy-bank"></i></div>
+              <span class="tagline">Everyday savings</span>
+              <h4>Kaydsi</h4>
+              <p>A core savings account with Mudaraba profit-sharing, flexible access, and no unnecessary balance barriers.</p>
+              <span class="benefit"><strong>Key benefit:</strong> Helps members save consistently while participating in halal returns.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="350">
+            <div class="s-card product-card w-100">
+              <div class="ci green"><i class="fas fa-hand-holding-dollar"></i></div>
+              <span class="tagline">Ownership returns</span>
+              <h4>Dividend</h4>
+              <p>Eligible member-owners receive annual dividend distributions linked to cooperative performance and shared success.</p>
+              <span class="benefit"><strong>Key benefit:</strong> Rewards active ownership through cooperative profit participation.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Products -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FINANCING â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section id="financing" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Financing</h2>
+        <p><span>Sharia-Compliant</span> <span class="description-title">Financing Structures</span></p>
+      </div>
+      <div class="container">
+        <!-- Financing intro and Sharia oversight removed as requested. Only financing services are displayed below. -->
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="s-card finance-card w-100">
+              <div class="ci blue"><i class="fas fa-cart-shopping"></i></div>
+              <span class="tagline">Trade and asset finance</span>
+              <h4>Murabaha</h4>
+              <p>Used for equipment, stock, vehicles, and business assets through transparent cost-plus financing.</p>
+              <span class="benefit"><strong>Best for:</strong> Members who need asset-backed purchases with clear repayment terms.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
+            <div class="s-card finance-card w-100">
+              <div class="ci blue"><i class="fas fa-hand-holding-usd"></i></div>
+              <span class="tagline">Profit-sharing partnership</span>
+              <h4>Mudaraba</h4>
+              <p>Sahal SACCO provides capital while the entrepreneur manages the venture and shares profit on agreed ratios.</p>
+              <span class="benefit"><strong>Best for:</strong> Experienced entrepreneurs with strong business capability and growth plans.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="s-card finance-card w-100">
+              <div class="ci blue"><i class="fas fa-handshake"></i></div>
+              <span class="tagline">Joint venture finance</span>
+              <h4>Musharaka</h4>
+              <p>Both the SACCO and the member contribute capital to a venture and share results proportionally.</p>
+              <span class="benefit"><strong>Best for:</strong> Members seeking partnership-based financing for projects or property.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
+            <div class="s-card finance-card w-100">
+              <div class="ci blue"><i class="fas fa-building"></i></div>
+              <span class="tagline">Lease-based financing</span>
+              <h4>Ijara</h4>
+              <p>Assets are acquired by the SACCO and leased to the member, including lease-to-own options where suitable.</p>
+              <span class="benefit"><strong>Best for:</strong> Machinery, property, and productive assets that support long-term growth.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="s-card finance-card w-100">
+              <div class="ci blue"><i class="fas fa-briefcase"></i></div>
+              <span class="tagline">Operational liquidity</span>
+              <h4>Working Capital</h4>
+              <p>Short-term support for inventory cycles, cash flow timing, and seasonal business operations.</p>
+              <span class="benefit"><strong>Best for:</strong> Traders and SMEs that need responsive financing for daily activity.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="350">
+            <div class="s-card finance-card w-100" style="background:linear-gradient(180deg,#f2faf6 0%,#ffffff 100%); border-color:#c9e4d8;">
+              <div class="ci" style="background:#fff;"><i class="fas fa-scale-balanced" style="color:var(--green);font-size:1.25rem;"></i></div>
+              <span class="tagline">Governance and protection</span>
+              <h4>Independent Sharia Review</h4>
+              <p>Products, contracts, and audits are supervised to keep financing consistent with halal principles and cooperative standards.</p>
+              <span class="benefit"><strong>Key benefit:</strong> Members receive financing with stronger ethical assurance and transparency.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Financing -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SECTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section id="sectors" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sectors</h2>
+        <p><span>Supporting Somalia's</span> <span class="description-title">Economic Backbone</span></p>
+      </div>
+      <div class="container">
+        <!-- Priority sectors heading and description removed as requested. Only sector cards remain. -->
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="s-card sector-card w-100">
+              <div class="ci blue"><i class="fas fa-seedling"></i></div>
+              <span class="tagline">Food and farm production</span>
+              <h4>Agriculture</h4>
+              <p>Support for irrigation, inputs, post-harvest storage, and productive farm activities.</p>
+              <span class="benefit"><strong>Focus:</strong> Helps strengthen food supply chains and rural income generation.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
+            <div class="s-card sector-card w-100">
+              <div class="ci blue"><i class="fas fa-cow"></i></div>
+              <span class="tagline">Pastoral and export value chains</span>
+              <h4>Livestock</h4>
+              <p>Financing for herders, traders, and livestock-related commerce across local and export markets.</p>
+              <span class="benefit"><strong>Focus:</strong> Supports one of Somalia's most important productive sectors.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="s-card sector-card w-100">
+              <div class="ci blue"><i class="fas fa-fish"></i></div>
+              <span class="tagline">Coastal enterprise</span>
+              <h4>Fisheries</h4>
+              <p>Support for boats, fish trading, cold storage, and processing activity along the coast.</p>
+              <span class="benefit"><strong>Focus:</strong> Expands value creation in blue-economy supply chains.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
+            <div class="s-card sector-card w-100">
+              <div class="ci blue"><i class="fas fa-building"></i></div>
+              <span class="tagline">Commercial and housing assets</span>
+              <h4>Real Estate &amp; Housing</h4>
+              <p>Financing for offices, commercial property, and practical housing-related development.</p>
+              <span class="benefit"><strong>Focus:</strong> Enables productive asset growth in expanding urban centers.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="s-card sector-card w-100">
+              <div class="ci blue"><i class="fas fa-industry"></i></div>
+              <span class="tagline">Value addition</span>
+              <h4>Agro-processing</h4>
+              <p>Support for storage, packaging, milling, and light manufacturing linked to local production.</p>
+              <span class="benefit"><strong>Focus:</strong> Helps producers capture more value closer to the source.</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="350">
+            <div class="s-card sector-card w-100">
+              <div class="ci blue"><i class="fas fa-store"></i></div>
+              <span class="tagline">Domestic and regional trade</span>
+              <h4>Trade &amp; Commerce</h4>
+              <p>Financing for importers, retailers, market traders, and business activity that keeps cities moving.</p>
+              <span class="benefit"><strong>Focus:</strong> Improves stock flow, market access, and everyday business continuity.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Sectors -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• INVESTMENT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="investment" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Investment</h2>
+        <p><span>Grow Your Wealth</span> <span class="description-title">The Halal Way</span></p>
+      </div>
+      <div class="container">
+        <div class="row mb-4" data-aos="fade-up">
+          <div class="col-lg-8 mx-auto">
+            <img src="assets/img/hero-investment.webp" alt="Investment" style="width:100%;max-height:280px;object-fit:cover;border-radius:var(--radius-lg);">
+          </div>
+        </div>
+        <p class="text-center text-muted mb-4" style="font-size:.88rem;">Returns are based on actual performance. No guaranteed returns. Risk shared in accordance with Sharia principles.</p>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="s-card">
+              <div class="ci green"><i class="fas fa-layer-group"></i></div>
+              <h4>Pooled Investment</h4><span class="sub">Diversified Portfolio</span>
+              <p>Invest collectively with other members across 3â€“5 halal sectors simultaneously â€” lower individual risk through cooperative pooling.</p>
+              <span class="foot">3â€“5 sectors Â· Diversified Â· Fully halal</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="s-card">
+              <div class="ci green"><i class="fas fa-chart-pie"></i></div>
+              <h4>Mudaraba Pool</h4><span class="sub">Profit-Sharing</span>
+              <p>Invest in a profit-sharing pool across multiple halal sectors. Annual distribution based on actual cooperative performance.</p>
+              <span class="foot">Annual distribution Â· Profit-sharing Â· Halal</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="s-card">
+              <div class="ci green"><i class="fas fa-crosshairs"></i></div>
+              <h4>Targeted Sector</h4><span class="sub">Direct Investment</span>
+              <p>Choose your sector â€” Agriculture, Livestock, Trade, or Real Estate â€” and invest directly where you know best.</p>
+              <span class="foot">Per-sector distribution Â· Flexible terms</span>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mt-4" data-aos="fade-up">
+          <div class="col-12 text-center"><h5 style="font-weight:700;margin-bottom:14px;">Investment Governance</h5></div>
+          <div class="col-6 col-md-3"><div class="gp"><div class="gpi"><i class="bi bi-eye"></i></div><h6>Sharia Oversight</h6></div></div>
+          <div class="col-6 col-md-3"><div class="gp"><div class="gpi"><i class="bi bi-bar-chart"></i></div><h6>Transparent Reporting</h6></div></div>
+          <div class="col-6 col-md-3"><div class="gp"><div class="gpi"><i class="bi bi-shield-lock"></i></div><h6>Risk Management</h6></div></div>
+          <div class="col-6 col-md-3"><div class="gp"><div class="gpi"><i class="bi bi-clock-history"></i></div><h6>Annual Distribution</h6></div></div>
+        </div>
+      </div>
+    </section><!-- /Investment -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• IMPACT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="impact" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Impact</h2>
+        <p><span>Five Ways We</span> <span class="description-title">Strengthen Communities</span></p>
+      </div>
+      <div class="container">
+
+        <!-- Member story -->
+        <div class="row g-4 mb-5 align-items-center" data-aos="fade-up">
+          <div class="col-md-5">
+            <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);">
+              <img src="assets/img/member-story.webp" alt="Sahal SACCO member story" style="width:100%;height:260px;object-fit:cover;display:block;">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="story-box">
+              <span style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--green);display:block;margin-bottom:10px;">Member Story</span>
+              <blockquote>"Together, our members are building businesses and creating jobs. From small shops to community enterprises â€” we grow together."</blockquote>
+              <p style="font-size:.84rem;color:var(--gray-600);margin-top:12px;margin-bottom:0;">Fartun Ahmed joined with 5 shares, saved for 18 months, accessed Murabaha financing, and now employs two women from her neighborhood.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="imp-card">
+              <div class="ii"><i class="fas fa-graduation-cap"></i></div>
+              <h4>Youth Employment</h4>
+              <p>40% of financing goes to members under 35, creating jobs for the next generation.</p>
+              <div class="is"><div class="isf">40%</div><div class="isl">of financing to under-35s</div></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
+            <div class="imp-card">
+              <div class="ii"><i class="fas fa-store"></i></div>
+              <h4>SME Growth</h4>
+              <p>Supporting small businesses with Sharia-compliant capital to scale and create sustainable employment.</p>
+              <div class="is"><div class="isf">300+</div><div class="isl">businesses supported</div></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="imp-card">
+              <div class="ii"><i class="fas fa-users"></i></div>
+              <h4>Cooperative Strengthening</h4>
+              <p>Modeling transparent governance and member ownership to build Somalia's cooperative movement.</p>
+              <div class="is"><div class="isf">11</div><div class="isl">member-elected board directors</div></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
+            <div class="imp-card">
+              <div class="ii"><i class="fas fa-hand-holding-heart"></i></div>
+              <h4>Financial Inclusion</h4>
+              <p>75% of members had no formal bank account before joining Sahal SACCO.</p>
+              <div class="is"><div class="isf">75%</div><div class="isl">previously unbanked</div></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="imp-card">
+              <div class="ii"><i class="fas fa-venus"></i></div>
+              <h4>Women's Empowerment</h4>
+              <p>Women represent 48% of membership, supported by targeted literacy programs and Haween Kaab financing.</p>
+              <div class="is"><div class="isf">48%</div><div class="isl">women members</div></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="350">
+            <div class="imp-card" style="background:var(--blue);border-color:var(--blue);">
+              <div class="ii" style="background:rgba(255,255,255,.12);"><i class="fas fa-bullseye" style="color:#fff;"></i></div>
+              <h4 style="color:#fff;">Growth Targets</h4>
+              <p style="color:rgba(255,255,255,.8);">$1.5M investment Â· 20,000 members Â· 27 sectors financed across Somalia.</p>
+              <div class="is" style="border-color:rgba(255,255,255,.2);"><div class="isf" style="color:#fff;">$1.5M</div><div class="isl" style="color:rgba(255,255,255,.6);">target investment goal</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Impact -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• BOARD / LEADERSHIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="board" class="team section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Leadership</h2>
+        <p><span>Board of Directors &amp;</span> <span class="description-title">Sharia Board</span></p>
+      </div>
+      <div class="container">
+        <p class="text-center text-muted mb-4" style="font-size:.88rem;max-width:640px;margin-inline:auto;">The Board of Directors is the highest decision-making body of Sahal SACCO â€” responsible for strategic oversight, governance, and protecting member interests.</p>
+
+        <h6 class="fw-bold mb-3" style="color:var(--blue);">Board of Directors</h6>
+        <div class="row g-3 mb-5">
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Garad Hassan</h5><span class="rl">Chairman</span><p>Strategic leadership and board governance.</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Liban Isse</h5><span class="rl">Vice Chairman</span><p>Board leadership and committee coordination.</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Naima Warsame Hassan</h5><span class="rl">Director</span><p>Policy oversight and governance reviews.</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Abdisalan Ahmed</h5><span class="rl">Director</span><p>Governance compliance, member interests.</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Yusuf Abdulahi</h5><span class="rl">Director</span><p>Strategic planning, performance monitoring.</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Nur Abdi Isse</h5><span class="rl">Director</span><p>Risk awareness and accountability.</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Anas Abdi</h5><span class="rl">Director</span><p>Strategic initiatives and long-term priorities.</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="b-card"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Dr Mohamed Abdi Ali</h5><span class="rl">Director</span><p>Governance standards and decision quality.</p></div></div>
+        </div>
+
+        <h6 class="fw-bold mb-2" style="color:var(--green);">Sharia Supervisory Board</h6>
+        <p class="text-muted mb-3" style="font-size:.84rem;">3 independent scholars ensuring all products comply with Islamic financial principles â€” quarterly audits, AAOIFI standards.</p>
+        <div class="row g-3">
+          <div class="col-md-4"><div class="b-card sharia"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Sheikh Ahmed Abdullahi</h5><span class="rl">Sharia Board Chairman</span><p>Leads compliance reviews and issues formal product rulings.</p></div></div>
+          <div class="col-md-4"><div class="b-card sharia"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Sheikh Omar Hassan</h5><span class="rl">Sharia Scholar</span><p>Reviews financing contracts for full compliance.</p></div></div>
+          <div class="col-md-4"><div class="b-card sharia"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Sheikh Abdirahman Moallim</h5><span class="rl">Sharia Scholar</span><p>Guides Sharia-compliant product innovation.</p></div></div>
+        </div>
+      </div>
+    </section><!-- /Board -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NEWS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="news" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>News</h2>
+        <p><span>Latest Updates from</span> <span class="description-title">Sahal SACCO</span></p>
+      </div>
+      <div class="container">
+        <div class="fn-card mb-4" data-aos="fade-up">
+          <span class="fc">Branch Opening</span><span class="fd">March 15, 2025</span>
+          <h3>Sahal SACCO Opens New Branch in Garowe, Puntland</h3>
+          <p>Bringing Sharia-compliant financial services to entrepreneurs, farmers, and families in northeastern Somalia.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100"><div class="n-card"><div class="nm"><span class="nc">New Product</span><span class="nd">Feb 28, 2025</span></div><h5>Agricultural Financing Launched</h5><p>Salam contracts for smallholder farmers in Lower Shabelle â€” 100% advance payments for future crop delivery.</p></div></div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200"><div class="n-card"><div class="nm"><span class="nc">Event</span><span class="nd">Feb 10, 2025</span></div><h5>Annual Members Meeting</h5><p>Join us March 25 at the Mogadishu head office â€” profit distribution, board elections, and 2024 annual report.</p></div></div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300"><div class="n-card"><div class="nm"><span class="nc">Investment</span><span class="nd">Jan 22, 2025</span></div><h5>Pooled Investment Program Opens</h5><p>Members can now invest in a diversified halal portfolio across agriculture, trade, and real estate. Min: $500.</p></div></div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400"><div class="n-card"><div class="nm"><span class="nc">Milestone</span><span class="nd">Dec 5, 2024</span></div><h5>400 Members Reached</h5><p>We reached 400 active members and $240,000 in member savings. Thank you to our growing cooperative family.</p></div></div>
+        </div>
+      </div>
+    </section><!-- /News -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MEMBERSHIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="membership" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Membership</h2>
+        <p><span>Become a</span> <span class="description-title">Member-Owner</span></p>
+      </div>
+      <div class="container">
+        <div class="row g-4 align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);">
+              <img src="assets/img/hero-membership.webp" alt="Membership" style="width:100%;height:300px;object-fit:cover;display:block;">
+            </div>
+            <div class="row g-2 mt-3">
+              <div class="col-6"><div class="t-item"><div class="ico"><i class="fas fa-vote-yea"></i></div><div><h5>Ownership</h5><p>Shareholder with democratic voting rights.</p></div></div></div>
+              <div class="col-6"><div class="t-item"><div class="ico"><i class="fas fa-piggy-bank"></i></div><div><h5>Savings</h5><p>Mudaraba savings, no fees, flexible access.</p></div></div></div>
+              <div class="col-6"><div class="t-item"><div class="ico"><i class="fas fa-hand-holding-usd"></i></div><div><h5>Financing</h5><p>Sharia-compliant financing on request.</p></div></div></div>
+              <div class="col-6"><div class="t-item"><div class="ico"><i class="fas fa-chart-line"></i></div><div><h5>Dividends</h5><p>Annual dividend on performance.</p></div></div></div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="membership-panel">
+              <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:1.25rem;margin-bottom:8px;">Become a member-owner with a clear path to saving and growth.</h3>
+              <p style="font-size:.9rem;color:var(--gray-600);margin-bottom:20px;">Membership gives you ownership, access to cooperative financial services, and a voice in the institution.</p>
+              <div class="sh-note mb-4"><i class="fas fa-info-circle me-2"></i>Share value and payment details are available at our head office in KM4, Mogadishu.</div>
+
+              <h6>Benefits</h6>
+              <ul class="list-unstyled membership-benefits mb-4">
+                <li><i class="bi bi-check-circle-fill"></i><span>Democratic ownership with voting rights and member participation.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span>Access to Sharia-compliant savings, financing, and investment services.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span>Opportunity to benefit from cooperative performance and annual dividends.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span>Support designed for households, entrepreneurs, and small businesses.</span></li>
+              </ul>
+
+              <h6>Simple Steps</h6>
+              <div class="stp"><div class="sn">01</div><div><h5>Register</h5><p>Complete the membership application with Member Services.</p></div></div>
+              <div class="stp"><div class="sn">02</div><div><h5>Submit Documents</h5><p>Provide the required identification and supporting records.</p></div></div>
+              <div class="stp"><div class="sn">03</div><div><h5>Approval</h5><p>Our team reviews the application and confirms your membership.</p></div></div>
+              <div class="stp"><div class="sn">04</div><div><h5>Start Saving</h5><p>Open your account, activate your shares, and begin using SACCO services.</p></div></div>
+            </div>
+            <a href="#contact" class="btn-get-started mt-2 d-inline-block">Start Your Application</a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Membership -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="faq" class="faq section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>F.A.Q</h2>
+        <p><span>Frequently Asked</span> <span class="description-title">Questions</span></p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Is Sahal SACCO licensed and regulated?</h3>
+                <div class="faq-content"><p>Yes. Sahal SACCO is licensed and operates under national cooperative law and Islamic financial principles. Our independent Sharia Supervisory Board conducts quarterly AAOIFI-standard audits.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>Are my savings Sharia-compliant?</h3>
+                <div class="faq-content"><p>Yes. All savings are invested in halal activities only. Profits are shared under a Mudaraba profit-sharing model â€” absolutely no interest (riba).</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>Can I transfer my membership shares?</h3>
+                <div class="faq-content"><p>Yes. Membership shares may be transferred in accordance with the SACCO's policies and Islamic principles. Contact Member Services for the transfer process.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>Can I withdraw my savings at any time?</h3>
+                <div class="faq-content"><p>Yes. Members may withdraw savings in accordance with SACCO guidelines, ensuring fairness and Sharia compliance. Kaydsi savings offers the most flexible withdrawal terms.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>How long does it take to become a member?</h3>
+                <div class="faq-content"><p>Membership is typically approved within 3 business days after completing required documentation and meeting the minimum share purchase requirement.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>Do I need an existing bank account to join?</h3>
+                <div class="faq-content"><p>No. 75% of our members had no prior formal banking relationship. We welcome all community members who wish to save and invest ethically.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /FAQ -->
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <div class="cta-strip">
+      <div class="container">
+        <h2>Become a Member-Owner Today</h2>
+        <p>Membership starts with a share purchase. Visit our office or contact us for current requirements.</p>
+        <a href="#membership" class="btn-w">Become a Member</a>
+        <a href="#investment"  class="btn-o">Invest with Sahal SACCO</a>
+      </div>
+    </div>
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CONTACT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p><span>Get in</span> <span class="description-title">Touch</span></p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Visit Us</h3>
+                  <p>KM4, Mogadishu, Somalia</p>
+                  <p style="font-size:.82rem;color:var(--gray-500);margin:0;">Sat â€“ Thu: 8:00 AM â€“ 4:00 PM</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call / WhatsApp</h3>
+                  <p><a href="tel:+252613888618">+252 613888618</a></p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:info@sahalsacco.com">info@sahalsacco.com</a></p>
+                </div>
+              </div>
+              <iframe src="https://maps.google.com/maps?q=Mogadishu+Somalia&t=&z=12&ie=UTF8&output=embed"
+                frameborder="0"
+                style="border:0;width:100%;height:240px;border-radius:var(--radius);margin-top:10px;"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="https://formspree.io/f/mwvnlavj" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" name="email" id="email-field" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone-field" class="pb-2">Phone (optional)</label>
+                  <input type="tel" name="phone" id="phone-field" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" name="subject" id="subject-field" class="form-control" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="7" id="message-field" required placeholder="Tell us how we can help youâ€¦"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Contact -->
+
+  </main>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <footer id="footer" class="footer">
+
+    <!-- Trust strip -->
+    <div class="trust-foot">
+      <div class="container">
+        <div class="row g-2 text-center">
+          <div class="col-6 col-md-3"><span><i class="fas fa-certificate"></i>Licensed &amp; Regulated</span></div>
+          <div class="col-6 col-md-3"><span><i class="fas fa-users"></i>Member-Owned</span></div>
+          <div class="col-6 col-md-3"><span><i class="fas fa-scale-balanced"></i>Sharia-Compliant</span></div>
+          <div class="col-6 col-md-3"><span><i class="fas fa-handshake"></i>AAOIFI Standards</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="#hero" class="footer-brand d-flex align-items-center mb-3">
+            <img src="assets/img/logo.webp" alt="Sahal SACCO" class="footer-brand-logo">
+            <span class="sitename"><span class="brand-primary">Sahal</span> <span class="brand-secondary">SACCO</span></span>
+          </a>
+          <p style="font-size:.86rem;color:var(--gray-600);line-height:1.7;">Member-owned savings and credit cooperative promoting ethical saving, financial inclusion, and sustainable development in Somalia.</p>
+          <div class="footer-contact" style="font-size:.84rem;">
+            <p style="margin:4px 0;"><strong>Address:</strong> KM4, Mogadishu, Somalia</p>
+            <p style="margin:4px 0;"><strong>Phone:</strong> +252 613888618</p>
+            <p style="margin:4px 0;"><strong>Email:</strong> info@sahalsacco.com</p>
+            <p style="margin:4px 0;"><strong>Hours:</strong> Sat â€“ Thu: 8:00 AM â€“ 4:00 PM</p>
+          </div>
+          <div class="social-links d-flex mt-3">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i><a href="#about">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#board">Board of Directors</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#products">Products</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#membership">Membership</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#news">News</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Financing links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Financing</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i><a href="#financing">Murabaha</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#financing">Mudaraba</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#financing">Musharaka</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#financing">Ijara</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#sectors">Sectors</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#impact">Impact</a></li>
+          </ul>
+        </div>
+
+        <!-- Partners mini -->
+        <div class="col-lg-4 col-md-12">
+          <h4>Our Partners</h4>
+          <div class="row g-2">
+            <div class="col-4">
+              <div style="background:#f5f7fa;border:1px solid var(--gray-200);border-radius:8px;padding:10px;text-align:center;min-height:58px;display:flex;align-items:center;justify-content:center;">
+                <img src="assets/img/partners/osob.jpeg" alt="Osob Microfinance" style="max-height:38px;max-width:100%;object-fit:contain;filter:grayscale(30%);">
+              </div>
+            </div>
+            <div class="col-4">
+              <div style="background:#f5f7fa;border:1px solid var(--gray-200);border-radius:8px;padding:10px;text-align:center;min-height:58px;display:flex;align-items:center;justify-content:center;">
+                <img src="assets/img/partners/wazaarada.jpeg" alt="Ministry of Commerce" style="max-height:38px;max-width:100%;object-fit:contain;filter:grayscale(30%);">
+              </div>
+            </div>
+            <div class="col-4">
+              <div style="background:#f5f7fa;border:1px solid var(--gray-200);border-radius:8px;padding:10px;text-align:center;min-height:58px;display:flex;align-items:center;justify-content:center;">
+                <img src="assets/img/partners/udhis.jpeg" alt="UDHIS" style="max-height:38px;max-width:100%;object-fit:contain;filter:grayscale(30%);">
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 p-3" style="background:var(--gray-50);border-radius:8px;font-size:.78rem;color:var(--gray-500);">
+            <strong style="color:var(--blue);">Licensed Â· Member-Owned Â· Sharia-Compliant Â· AAOIFI</strong>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Â© 2025 <strong class="px-1 sitename"><span class="brand-primary">Sahal</span> <span class="brand-secondary">SACCO</span></strong> All Rights Reserved.</p>
+      <div style="font-size:.76rem;color:var(--gray-500);margin-top:4px;">
+        <a href="#" style="color:var(--gray-500);">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="#" style="color:var(--gray-500);">Terms of Use</a> &nbsp;|&nbsp;
+        <a href="#" style="color:var(--gray-500);">Sharia Compliance</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"><div></div><div></div><div></div><div></div></div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
