@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,7 @@
   <meta name="description" content="Sahal SACCO is a member-owned savings and credit cooperative promoting ethical saving, financial inclusion, and sustainable economic development in Somalia.">
   <meta name="keywords" content="Sahal SACCO, Somalia, savings, cooperative, Sharia-compliant, halal finance, financial inclusion">
 
-  <!-- â”€â”€ Favicons (real SACCO favicons) â”€â”€ -->
+  <!-- -- Favicons (real SACCO favicons) -- -->
   <link rel="icon" type="image/x-icon"          href="assets/img/favicons/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -32,9 +32,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       SAHAL SACCO â€” BRAND TOKEN SYSTEM
-       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+    /* ========================================
+       SAHAL SACCO — BRAND TOKEN SYSTEM
+       ======================================== */
     :root {
       --blue:        #0A3E5C;   /* deep trust blue   */
       --blue-mid:    #0d4f76;
@@ -83,14 +83,14 @@
       outline-offset: 3px;
     }
 
-    /* â”€â”€ Topbar â”€â”€ */
+    /* -- Topbar -- */
     .topbar { background: var(--blue) !important; }
     .topbar a { color: rgba(255,255,255,.82) !important; }
     .topbar a:hover { color: #fff !important; }
     .topbar .social-links a { color: rgba(255,255,255,.7) !important; }
     .topbar .social-links a:hover { color: #fff !important; }
 
-    /* â”€â”€ Brand / nav â”€â”€ */
+    /* -- Brand / nav -- */
     .sitename {
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
@@ -173,7 +173,7 @@
       }
     }
 
-    /* â”€â”€ Stats bar â”€â”€ */
+    /* -- Stats bar -- */
     .stats-bar { background: var(--blue); padding: 56px 0; }
     .stats-bar .sn {
       font-family: 'Montserrat', sans-serif;
@@ -194,7 +194,7 @@
       margin-top: 6px;
     }
 
-    /* â”€â”€ Reusable card â”€â”€ */
+    /* -- Reusable card -- */
     .s-card {
       background: #fff;
       border: 1px solid var(--gray-200);
@@ -230,7 +230,7 @@
       padding-top: 10px; margin-top: 12px; display: block;
     }
 
-    /* â”€â”€ Tags â”€â”€ */
+    /* -- Tags -- */
     .tag {
       display: inline-block; font-size: .7rem; font-weight: 700;
       border-radius: 4px; padding: 2px 7px; margin: 2px 2px 0 0;
@@ -238,7 +238,7 @@
     .tg  { background: var(--green-light); color: var(--green); }
     .tb  { background: var(--blue-light);  color: var(--blue); }
 
-    /* â”€â”€ Trust items â”€â”€ */
+    /* -- Trust items -- */
     .t-item {
       display: flex; gap: 12px; align-items: flex-start;
       background: #fff; border: 1px solid var(--gray-200);
@@ -252,13 +252,13 @@
     .t-item h5 { font-size: .85rem; font-weight: 700; margin-bottom: 2px; }
     .t-item p  { font-size: .76rem; color: var(--gray-500); margin: 0; }
 
-    /* â”€â”€ Timeline â”€â”€ */
+    /* -- Timeline -- */
     .tl { display: flex; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--gray-100); }
     .tl:last-child { border-bottom: none; }
     .tl .yr { font-weight: 700; color: var(--blue); min-width: 50px; font-size: .88rem; }
     .tl .ev { font-size: .85rem; color: var(--gray-600); }
 
-    /* â”€â”€ VM cards (Vision/Mission) â”€â”€ */
+    /* -- VM cards (Vision/Mission) -- */
     .vm { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 10px; padding: 20px 16px; height: 100%; }
     .vm .vl { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--green); display: block; margin-bottom: 8px; }
     .vm p  { font-size: .855rem; color: var(--gray-600); line-height: 1.65; margin: 0; }
@@ -304,7 +304,7 @@
       flex-shrink: 0;
     }
 
-    /* â”€â”€ Board cards â”€â”€ */
+    /* -- Board cards -- */
     .b-card {
       background: #fff; border: 1px solid var(--gray-200);
       border-radius: 10px; padding: 18px 12px; text-align: center;
@@ -318,7 +318,7 @@
     .b-card.sharia { border-color: var(--green-light); }
     .b-card.sharia .av { color: var(--green-light); }
 
-    /* â”€â”€ Impact cards â”€â”€ */
+    /* -- Impact cards -- */
     .imp-card {
       background: #fff; border: 1px solid var(--gray-200); border-radius: 12px;
       padding: 20px 16px; height: 100%; transition: var(--trans);
@@ -332,7 +332,7 @@
     .imp-card .isf { font-size: 1.4rem; font-weight: 800; color: var(--green); line-height: 1; }
     .imp-card .isl { font-size: .72rem; color: var(--gray-500); }
 
-    /* â”€â”€ News cards â”€â”€ */
+    /* -- News cards -- */
     .n-card { background: #fff; border: 1px solid var(--gray-200); border-radius: 10px; padding: 18px; height: 100%; transition: var(--trans); }
     .n-card:hover { box-shadow: var(--shadow); }
     .n-card .nm { display: flex; gap: 8px; align-items: center; margin-bottom: 9px; }
@@ -341,20 +341,20 @@
     .n-card h5  { font-size: .9rem; font-weight: 700; margin-bottom: 7px; color: var(--gray-900); }
     .n-card p   { font-size: .82rem; color: var(--gray-600); line-height: 1.6; margin: 0; }
 
-    /* â”€â”€ Featured news â”€â”€ */
+    /* -- Featured news -- */
     .fn-card { background: linear-gradient(135deg,#edf4fc 0%,var(--green-light) 100%); border: 1px solid #c5d8e8; border-radius: 14px; padding: 28px; }
     .fn-card .fc { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--green); margin-right: 10px; }
     .fn-card .fd { font-size: .78rem; color: var(--gray-500); }
     .fn-card h3  { font-size: 1.3rem; font-weight: 800; margin: 9px 0; color: var(--gray-900); }
     .fn-card p   { font-size: .9rem; color: var(--gray-600); line-height: 1.7; margin: 0; }
 
-    /* â”€â”€ Steps â”€â”€ */
+    /* -- Steps -- */
     .stp { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
     .stp .sn { width: 38px; height: 38px; background: var(--blue); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .85rem; flex-shrink: 0; }
     .stp h5   { font-size: .9rem; font-weight: 700; margin-bottom: 3px; }
     .stp p    { font-size: .82rem; color: var(--gray-600); margin: 0; }
 
-    /* â”€â”€ Partners grid â”€â”€ */
+    /* -- Partners grid -- */
     .partner-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .partner-item {
       background: #fff; border: 1px solid var(--gray-200); border-radius: 12px;
@@ -367,15 +367,15 @@
     @media(max-width:768px){ .partner-grid { grid-template-columns: 1fr 1fr; } }
     @media(max-width:480px){ .partner-grid { grid-template-columns: 1fr; } }
 
-    /* â”€â”€ Gov pillars â”€â”€ */
+    /* -- Gov pillars -- */
     .gp { text-align: center; padding: 16px 12px; border: 1px solid var(--gray-200); border-radius: 10px; background: #fff; }
     .gp .gpi { font-size: 1.4rem; color: var(--blue); margin-bottom: 7px; }
     .gp h6   { font-size: .82rem; font-weight: 700; margin: 0; }
 
-    /* â”€â”€ Sharia note â”€â”€ */
+    /* -- Sharia note -- */
     .sh-note { background: var(--green-light); border-left: 4px solid var(--green); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: .82rem; color: #155c44; margin-top: 12px; }
 
-    /* â”€â”€ CTA strip â”€â”€ */
+    /* -- CTA strip -- */
     .cta-strip { background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%); padding: 80px 0; text-align: center; }
     .cta-strip h2 { color: #fff; font-family: 'Montserrat',sans-serif; font-size: 1.9rem; font-weight: 800; margin-bottom: 10px; }
     .cta-strip p  { color: rgba(255,255,255,.82); font-size: 1rem; margin-bottom: 24px; }
@@ -416,11 +416,11 @@
       transform: translateY(-2px);
     }
 
-    /* â”€â”€ Member story â”€â”€ */
+    /* -- Member story -- */
     .story-box { background: var(--gray-50); border-radius: 14px; padding: 32px; }
     .story-box blockquote { font-size: 1.05rem; font-weight: 500; color: var(--gray-900); line-height: 1.75; border: none; margin: 0; padding: 0; }
 
-    /* â”€â”€ Shared media frames â”€â”€ */
+    /* -- Shared media frames -- */
     .media-frame {
       position: relative;
       border-radius: var(--radius-lg);
@@ -450,28 +450,28 @@
       height: 320px;
     }
 
-    /* â”€â”€ Hero image â”€â”€ */
+    /* -- Hero image -- */
     #hero .hero-img-wrap { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-h); }
     #hero .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
     #hero h1 span { color: var(--green); }
 
-    /* â”€â”€ btn-get-started override â”€â”€ */
+    /* -- btn-get-started override -- */
     .btn-get-started { background: var(--blue) !important; color: #fff !important; border: none !important; }
     .btn-get-started:hover { background: var(--blue-mid) !important; }
     .btn-get-started.outline { background: transparent !important; border: 2px solid var(--blue) !important; color: var(--blue) !important; }
     .btn-get-started.outline:hover { background: var(--blue) !important; color: #fff !important; }
 
-    /* â”€â”€ Section title accent â”€â”€ */
+    /* -- Section title accent -- */
     .section-title .description-title { color: var(--blue); }
 
-    /* â”€â”€ Footer overrides â”€â”€ */
+    /* -- Footer overrides -- */
     .footer .sitename { font-size: 1.2rem; }
 
-    /* â”€â”€ About hero image â”€â”€ */
+    /* -- About hero image -- */
     .about-hero-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); }
     .about-hero-img img { width: 100%; height: 340px; object-fit: cover; display: block; }
 
-    /* â”€â”€ Spacing utility â”€â”€ */
+    /* -- Spacing utility -- */
     .section-gap { padding: 72px 0; }
     .light-bg { background: var(--gray-50); }
     .section { padding: 96px 0; }
@@ -485,7 +485,7 @@
       .membership-panel { padding: 22px 18px; }
     }
 
-    /* â”€â”€ Trust footer strip â”€â”€ */
+    /* -- Trust footer strip -- */
     .trust-foot { background: var(--blue); padding: 16px 0; }
     .trust-foot span { color: rgba(255,255,255,.85); font-size: .82rem; }
     .trust-foot i { margin-right: 5px; color: rgba(255,255,255,.65); }
@@ -899,28 +899,138 @@
       color: var(--blue);
       font-weight: 700;
     }
-    .product-card .ci,
-    .finance-card .ci,
-    .sector-card .ci {
+    .section-title .section-note {
+      max-width: 760px;
+      margin: 12px auto 0;
+      font-size: .94rem;
+      line-height: 1.75;
+      color: var(--gray-600);
+    }
+    .system-card {
+      background: #fff;
+      border: 1px solid rgba(10,62,92,.12);
+      border-radius: 18px;
+      padding: 24px 22px;
+      height: 100%;
+      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+      box-shadow: 0 8px 20px rgba(10,62,92,.04);
+    }
+    .system-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(29,122,92,.38);
+      box-shadow: 0 16px 32px rgba(10,62,92,.08);
+    }
+    .system-card .card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .system-card .card-head h4 {
+      margin: 0;
+      font-size: 1.06rem;
+      line-height: 1.35;
+    }
+    .system-card .ci {
       width: 54px;
       height: 54px;
       border-radius: 16px;
-      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
-    .product-card .tagline,
-    .finance-card .tagline,
-    .sector-card .tagline {
-      display: inline-block;
-      margin-bottom: 8px;
-      font-size: .72rem;
-      text-transform: uppercase;
-      letter-spacing: .12em;
+    .system-card .ci.green {
+      background: var(--green-light);
+    }
+    .system-card .ci.green i {
+      color: var(--green);
+      font-size: 1.18rem;
+    }
+    .system-card .ci.blue {
+      background: var(--blue-light);
+    }
+    .system-card .ci.blue i {
+      color: var(--blue);
+      font-size: 1.18rem;
+    }
+    .system-card .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .system-card .meta-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .68rem;
       font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .system-card .meta-chip.audience {
+      background: var(--blue-light);
+      color: var(--blue);
+    }
+    .system-card .meta-chip.structure {
+      background: var(--green-light);
       color: var(--green);
     }
-    .finance-intro,
-    .sectors-intro {
-      padding-bottom: 8px;
+    .system-card p {
+      font-size: .89rem;
+      line-height: 1.7;
+      color: var(--gray-600);
+      margin: 0;
+    }
+    .section-bridge {
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    .section-bridge .eyebrow {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-size: .73rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--green);
+    }
+    .section-bridge h3 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    .section-bridge p {
+      margin: 0;
+      max-width: 720px;
+      font-size: .94rem;
+      line-height: 1.75;
+      color: var(--gray-600);
+    }
+    .benefit-card {
+      padding: 22px 20px;
+    }
+    .benefit-card .ci {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      margin-bottom: 16px;
+    }
+    .benefit-card h5 {
+      font-size: .98rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+    .benefit-card p {
+      font-size: .84rem;
+      line-height: 1.65;
     }
     .highlight-note {
       background: linear-gradient(135deg, #edf7f2 0%, #f8fbfd 100%);
@@ -1096,7 +1206,7 @@
 <body class="index-page">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HEADER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <!-- ================ HEADER ================ -->
   <header id="header" class="header sticky-top">
 
     <!-- Top bar -->
@@ -1157,7 +1267,7 @@
 
   <main id="main-content" class="main">
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ HERO ================ -->
     <section id="hero" class="hero section">
       <div class="container" data-aos="zoom-out">
         <div class="hero-copy">
@@ -1174,7 +1284,7 @@
       </div>
     </section><!-- /Hero -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• STATS BAR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ STATS BAR ================ -->
     <section class="stats-bar">
       <div class="container">
         <div class="row g-4 text-center">
@@ -1186,7 +1296,7 @@
       </div>
     </section>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CORE VALUES (Featured Services) â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ CORE VALUES (Featured Services) ================ -->
     <section id="featured-services" class="featured-services section">
       <div class="container">
         <div class="row gy-4">
@@ -1208,7 +1318,7 @@
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-people icon"></i></div>
               <h4>Financial Inclusion</h4>
-              <p>Bringing ethical finance to underserved Somali communities â€” the unbanked and micro-entrepreneur.</p>
+              <p>Bringing ethical finance to underserved Somali communities.</p>
             </div>
           </div>
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
@@ -1222,7 +1332,7 @@
       </div>
     </section>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ ABOUT ================ -->
         <section id="about" class="about section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
@@ -1274,7 +1384,7 @@
       </div>
     </section><!-- /About -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PARTNERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ PARTNERS ================ -->
     <section id="partners" class="section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Partners</h2>
@@ -1298,212 +1408,292 @@
         <div class="row g-3 mt-3 justify-content-center text-center" style="font-size:.78rem;color:var(--gray-500);">
           <div class="col-4">Osob Microfinance</div>
           <div class="col-4">Ministry of Commerce &amp; Industry</div>
-          <div class="col-4">UDHIS â€” Somali Union Cooperatives</div>
+          <div class="col-4">UDHIS — Somali Union Cooperatives</div>
         </div>
       </div>
     </section><!-- /Partners -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PRODUCTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ PRODUCTS ================ -->
         <section id="products" class="services section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Products</h2>
-        <p><span>Member-Focused</span> <span class="description-title">Financial Solutions</span></p>
+        <p><span>Sharia-Compliant Financial</span> <span class="description-title">Products for Members</span></p>
+        <p class="section-note">Designed to support individuals, businesses, and communities with ethical and inclusive financial services.</p>
       </div>
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="s-card product-card w-100">
-              <div class="ci green"><i class="fas fa-store"></i></div>
-              <span class="tagline">Micro trade support</span>
-              <h4>Fursad</h4>
-              <p>Profit-free daily financing that helps micro-entrepreneurs restock and keep small trading activity moving.</p>
-              <span class="benefit"><strong>Key benefit:</strong> Access quick working support without markup pressure.</span>
+            <div class="system-card product-card">
+              <div class="card-head">
+                <h4>Dheeman</h4>
+                <div class="ci green"><i class="fas fa-people-group"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Women</span>
+                <span class="meta-chip structure">Murabaha</span>
+              </div>
+              <p>Murabaha-based financing designed to support women entrepreneurs.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
-            <div class="s-card product-card w-100">
-              <div class="ci green"><i class="fas fa-chart-line"></i></div>
-              <span class="tagline">Goal-based business growth</span>
-              <h4>Tooko + Muraabaxa</h4>
-              <p>A structured save-to-finance pathway where members build capital first, then unlock Murabaha support for business assets.</p>
-              <span class="benefit"><strong>Key benefit:</strong> Turns disciplined saving into faster access to ethical business financing.</span>
+            <div class="system-card product-card">
+              <div class="card-head">
+                <h4>Kayd / Ayuuto / Dhigaal</h4>
+                <div class="ci blue"><i class="fas fa-piggy-bank"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Individuals</span>
+                <span class="meta-chip structure">Savings / Murabaha</span>
+              </div>
+              <p>Savings and financing solutions for individuals and small startups.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="s-card product-card w-100">
-              <div class="ci green"><i class="fas fa-user-group"></i></div>
-              <span class="tagline">Women-focused finance</span>
-              <h4>Haween Kaab</h4>
-              <p>Savings and business financing tailored for women, backed by guidance and financial literacy support.</p>
-              <span class="benefit"><strong>Key benefit:</strong> Expands access to capital for women-led livelihoods and enterprises.</span>
+            <div class="system-card product-card">
+              <div class="card-head">
+                <h4>Kobciye</h4>
+                <div class="ci green"><i class="fas fa-seedling"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Cooperatives</span>
+                <span class="meta-chip structure">Murabaha / Ijara</span>
+              </div>
+              <p>Financing support for cooperatives and group-based enterprises.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
-            <div class="s-card product-card w-100">
-              <div class="ci green"><i class="fas fa-rocket"></i></div>
-              <span class="tagline">SME expansion</span>
-              <h4>Kobciye</h4>
-              <p>Growth-oriented financing for established small and medium enterprises ready to expand operations or capacity.</p>
-              <span class="benefit"><strong>Key benefit:</strong> Supports scaling businesses with structured, Sharia-compliant financing.</span>
+            <div class="system-card product-card">
+              <div class="card-head">
+                <h4>Daryeel</h4>
+                <div class="ci blue"><i class="fas fa-screwdriver-wrench"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Members</span>
+                <span class="meta-chip structure">Ijara / Murabaha</span>
+              </div>
+              <p>Asset financing for maintenance and essential improvements.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="s-card product-card w-100">
-              <div class="ci green"><i class="fas fa-piggy-bank"></i></div>
-              <span class="tagline">Everyday savings</span>
-              <h4>Kaydsi</h4>
-              <p>A core savings account with Mudaraba profit-sharing, flexible access, and no unnecessary balance barriers.</p>
-              <span class="benefit"><strong>Key benefit:</strong> Helps members save consistently while participating in halal returns.</span>
+            <div class="system-card product-card">
+              <div class="card-head">
+                <h4>Fursad</h4>
+                <div class="ci green"><i class="fas fa-store"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Daily Traders</span>
+                <span class="meta-chip structure">Qard Hasan</span>
+              </div>
+              <p>Short-term Qard Hasan financing for small daily traders.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="350">
-            <div class="s-card product-card w-100">
-              <div class="ci green"><i class="fas fa-hand-holding-dollar"></i></div>
-              <span class="tagline">Ownership returns</span>
-              <h4>Dividend</h4>
-              <p>Eligible member-owners receive annual dividend distributions linked to cooperative performance and shared success.</p>
-              <span class="benefit"><strong>Key benefit:</strong> Rewards active ownership through cooperative profit participation.</span>
+            <div class="system-card product-card">
+              <div class="card-head">
+                <h4>Wadaag</h4>
+                <div class="ci blue"><i class="fas fa-handshake"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Businesses</span>
+                <span class="meta-chip structure">Musharaka</span>
+              </div>
+              <p>Partnership-based financing through profit-sharing models.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="system-card product-card">
+              <div class="card-head">
+                <h4>Qoys / Raas Bile</h4>
+                <div class="ci green"><i class="fas fa-house-user"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Families</span>
+                <span class="meta-chip structure">Savings / Investment</span>
+              </div>
+              <p>Family-focused savings and investment solutions.</p>
+            </div>
+          </div>
+          <div class="col-12" data-aos="fade-up" data-aos-delay="450">
+            <div class="section-bridge">
+              <span class="eyebrow">Member Benefits</span>
+              <h3>Benefits of Membership</h3>
+              <p>Membership provides access to structured financial services, cooperative ownership, and support that strengthens financial resilience.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="system-card benefit-card">
+              <div class="ci green"><i class="fas fa-hand-holding-usd"></i></div>
+              <h5>Affordable Financing</h5>
+              <p>Access to affordable and Sharia-compliant financing.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="550">
+            <div class="system-card benefit-card">
+              <div class="ci blue"><i class="fas fa-piggy-bank"></i></div>
+              <h5>Savings Culture</h5>
+              <p>Promotion of a strong and consistent savings culture.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="system-card benefit-card">
+              <div class="ci green"><i class="fas fa-users"></i></div>
+              <h5>Member Shareholding</h5>
+              <p>Ownership through member shareholding.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="650">
+            <div class="system-card benefit-card">
+              <div class="ci blue"><i class="fas fa-coins"></i></div>
+              <h5>Dividends</h5>
+              <p>Eligibility for dividends based on cooperative performance.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="700">
+            <div class="system-card benefit-card">
+              <div class="ci green"><i class="fas fa-sliders"></i></div>
+              <h5>Flexible Terms</h5>
+              <p>Flexible and member-friendly financing terms.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="750">
+            <div class="system-card benefit-card">
+              <div class="ci blue"><i class="fas fa-shield-halved"></i></div>
+              <h5>Financial Stability</h5>
+              <p>Enhanced financial stability and structured support.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="800">
+            <div class="system-card benefit-card">
+              <div class="ci green"><i class="fas fa-life-ring"></i></div>
+              <h5>Emergency Support</h5>
+              <p>Access to emergency financial assistance when needed.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="850">
+            <div class="system-card benefit-card">
+              <div class="ci blue"><i class="fas fa-people-group"></i></div>
+              <h5>Community Development</h5>
+              <p>Contribution to community growth and development.</p>
             </div>
           </div>
         </div>
       </div>
     </section><!-- /Products -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FINANCING â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ FINANCING ================ -->
         <section id="financing" class="section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Financing</h2>
-        <p><span>Sharia-Compliant</span> <span class="description-title">Financing Structures</span></p>
+        <p>Islamic Financial Models</p>
       </div>
       <div class="container">
-        <!-- Financing intro and Sharia oversight removed as requested. Only financing services are displayed below. -->
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="s-card finance-card w-100">
-              <div class="ci blue"><i class="fas fa-cart-shopping"></i></div>
-              <span class="tagline">Trade and asset finance</span>
+            <div class="s-card">
+              <div class="ci green"><i class="fas fa-tags"></i></div>
               <h4>Murabaha</h4>
-              <p>Used for equipment, stock, vehicles, and business assets through transparent cost-plus financing.</p>
-              <span class="benefit"><strong>Best for:</strong> Members who need asset-backed purchases with clear repayment terms.</span>
+              <span class="sub">Cost-Plus Financing</span>
+              <p>Asset financing with a clear purchase cost and agreed halal margin.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
-            <div class="s-card finance-card w-100">
-              <div class="ci blue"><i class="fas fa-hand-holding-usd"></i></div>
-              <span class="tagline">Profit-sharing partnership</span>
+            <div class="s-card">
+              <div class="ci blue"><i class="fas fa-chart-line"></i></div>
               <h4>Mudaraba</h4>
-              <p>Sahal SACCO provides capital while the entrepreneur manages the venture and shares profit on agreed ratios.</p>
-              <span class="benefit"><strong>Best for:</strong> Experienced entrepreneurs with strong business capability and growth plans.</span>
+              <span class="sub">Profit-Sharing Partnership</span>
+              <p>One party invests capital while profits are shared by agreement.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="s-card finance-card w-100">
-              <div class="ci blue"><i class="fas fa-handshake"></i></div>
-              <span class="tagline">Joint venture finance</span>
-              <h4>Musharaka</h4>
-              <p>Both the SACCO and the member contribute capital to a venture and share results proportionally.</p>
-              <span class="benefit"><strong>Best for:</strong> Members seeking partnership-based financing for projects or property.</span>
+            <div class="s-card">
+              <div class="ci green"><i class="fas fa-key"></i></div>
+              <h4>Ijara</h4>
+              <span class="sub">Leasing</span>
+              <p>Use essential assets through Sharia-compliant leasing arrangements.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
-            <div class="s-card finance-card w-100">
-              <div class="ci blue"><i class="fas fa-building"></i></div>
-              <span class="tagline">Lease-based financing</span>
-              <h4>Ijara</h4>
-              <p>Assets are acquired by the SACCO and leased to the member, including lease-to-own options where suitable.</p>
-              <span class="benefit"><strong>Best for:</strong> Machinery, property, and productive assets that support long-term growth.</span>
+            <div class="s-card">
+              <div class="ci blue"><i class="fas fa-users"></i></div>
+              <h4>Musharaka</h4>
+              <span class="sub">Joint Venture Partnership</span>
+              <p>Partners contribute capital together and share profit and risk fairly.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="s-card finance-card w-100">
-              <div class="ci blue"><i class="fas fa-briefcase"></i></div>
-              <span class="tagline">Operational liquidity</span>
-              <h4>Working Capital</h4>
-              <p>Short-term support for inventory cycles, cash flow timing, and seasonal business operations.</p>
-              <span class="benefit"><strong>Best for:</strong> Traders and SMEs that need responsive financing for daily activity.</span>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="350">
-            <div class="s-card finance-card w-100" style="background:linear-gradient(180deg,#f2faf6 0%,#ffffff 100%); border-color:#c9e4d8;">
-              <div class="ci" style="background:#fff;"><i class="fas fa-scale-balanced" style="color:var(--green);font-size:1.25rem;"></i></div>
-              <span class="tagline">Governance and protection</span>
-              <h4>Independent Sharia Review</h4>
-              <p>Products, contracts, and audits are supervised to keep financing consistent with halal principles and cooperative standards.</p>
-              <span class="benefit"><strong>Key benefit:</strong> Members receive financing with stronger ethical assurance and transparency.</span>
+            <div class="s-card">
+              <div class="ci green"><i class="fas fa-certificate"></i></div>
+              <h4>Sukuk</h4>
+              <span class="sub">Islamic Bonds</span>
+              <p>Asset-backed certificates that support halal investment and funding.</p>
             </div>
           </div>
         </div>
       </div>
     </section><!-- /Financing -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SECTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ SECTORS ================ -->
         <section id="sectors" class="section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Sectors</h2>
-        <p><span>Supporting Somalia's</span> <span class="description-title">Economic Backbone</span></p>
+        <p><span>Sector-Based</span> <span class="description-title">Financing Priorities</span></p>
+        <p class="section-note">Structured support for productive sectors that strengthen livelihoods, trade, and local enterprise.</p>
       </div>
       <div class="container">
-        <!-- Priority sectors heading and description removed as requested. Only sector cards remain. -->
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="s-card sector-card w-100">
-              <div class="ci blue"><i class="fas fa-seedling"></i></div>
-              <span class="tagline">Food and farm production</span>
-              <h4>Agriculture</h4>
-              <p>Support for irrigation, inputs, post-harvest storage, and productive farm activities.</p>
-              <span class="benefit"><strong>Focus:</strong> Helps strengthen food supply chains and rural income generation.</span>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="system-card sector-card">
+              <div class="card-head">
+                <h4>Barwaaqo Agriculture</h4>
+                <div class="ci green"><i class="fas fa-seedling"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Food Production</span>
+              </div>
+              <p>Financing support for agricultural production and related value chains.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
-            <div class="s-card sector-card w-100">
-              <div class="ci blue"><i class="fas fa-cow"></i></div>
-              <span class="tagline">Pastoral and export value chains</span>
-              <h4>Livestock</h4>
-              <p>Financing for herders, traders, and livestock-related commerce across local and export markets.</p>
-              <span class="benefit"><strong>Focus:</strong> Supports one of Somalia's most important productive sectors.</span>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="150">
+            <div class="system-card sector-card">
+              <div class="card-head">
+                <h4>Dhaqaal Livestock</h4>
+                <div class="ci blue"><i class="fas fa-cow"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Pastoral Economy</span>
+              </div>
+              <p>Structured financing for livestock trade, production, and asset management.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="s-card sector-card w-100">
-              <div class="ci blue"><i class="fas fa-fish"></i></div>
-              <span class="tagline">Coastal enterprise</span>
-              <h4>Fisheries</h4>
-              <p>Support for boats, fish trading, cold storage, and processing activity along the coast.</p>
-              <span class="benefit"><strong>Focus:</strong> Expands value creation in blue-economy supply chains.</span>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="system-card sector-card">
+              <div class="card-head">
+                <h4>Kacaan Industry</h4>
+                <div class="ci green"><i class="fas fa-industry"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Enterprise Production</span>
+              </div>
+              <p>Financing support for small industry, processing, and enterprise expansion.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
-            <div class="s-card sector-card w-100">
-              <div class="ci blue"><i class="fas fa-building"></i></div>
-              <span class="tagline">Commercial and housing assets</span>
-              <h4>Real Estate &amp; Housing</h4>
-              <p>Financing for offices, commercial property, and practical housing-related development.</p>
-              <span class="benefit"><strong>Focus:</strong> Enables productive asset growth in expanding urban centers.</span>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="s-card sector-card w-100">
-              <div class="ci blue"><i class="fas fa-industry"></i></div>
-              <span class="tagline">Value addition</span>
-              <h4>Agro-processing</h4>
-              <p>Support for storage, packaging, milling, and light manufacturing linked to local production.</p>
-              <span class="benefit"><strong>Focus:</strong> Helps producers capture more value closer to the source.</span>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="350">
-            <div class="s-card sector-card w-100">
-              <div class="ci blue"><i class="fas fa-store"></i></div>
-              <span class="tagline">Domestic and regional trade</span>
-              <h4>Trade &amp; Commerce</h4>
-              <p>Financing for importers, retailers, market traders, and business activity that keeps cities moving.</p>
-              <span class="benefit"><strong>Focus:</strong> Improves stock flow, market access, and everyday business continuity.</span>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="250">
+            <div class="system-card sector-card">
+              <div class="card-head">
+                <h4>Saafi Fisheries</h4>
+                <div class="ci blue"><i class="fas fa-fish"></i></div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-chip audience">Blue Economy</span>
+              </div>
+              <p>Sharia-compliant financing for fisheries, equipment, and related trade.</p>
             </div>
           </div>
         </div>
       </div>
     </section><!-- /Sectors -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• INVESTMENT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ INVESTMENT ================ -->
     <section id="investment" class="section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Investment</h2>
@@ -1523,8 +1713,8 @@
             <div class="s-card">
               <div class="ci green"><i class="fas fa-layer-group"></i></div>
               <h4>Pooled Investment</h4><span class="sub">Diversified Portfolio</span>
-              <p>Invest collectively with other members across 3â€“5 halal sectors simultaneously â€” lower individual risk through cooperative pooling.</p>
-              <span class="foot">3â€“5 sectors Â· Diversified Â· Fully halal</span>
+              <p>Invest across 3–5 halal sectors simultaneously</p>
+              <span class="foot">3–5 sectors · Diversified · Fully halal</span>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -1532,15 +1722,15 @@
               <div class="ci green"><i class="fas fa-chart-pie"></i></div>
               <h4>Mudaraba Pool</h4><span class="sub">Profit-Sharing</span>
               <p>Invest in a profit-sharing pool across multiple halal sectors. Annual distribution based on actual cooperative performance.</p>
-              <span class="foot">Annual distribution Â· Profit-sharing Â· Halal</span>
+              <span class="foot">Annual distribution · Profit-sharing · Halal</span>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="s-card">
               <div class="ci green"><i class="fas fa-crosshairs"></i></div>
               <h4>Targeted Sector</h4><span class="sub">Direct Investment</span>
-              <p>Choose your sector â€” Agriculture, Livestock, Trade, or Real Estate â€” and invest directly where you know best.</p>
-              <span class="foot">Per-sector distribution Â· Flexible terms</span>
+              <p>Choose your sector — Agriculture, Livestock, Trade, or Real Estate — and invest directly where you know best.</p>
+              <span class="foot">Per-sector distribution · Flexible terms</span>
             </div>
           </div>
         </div>
@@ -1554,11 +1744,11 @@
       </div>
     </section><!-- /Investment -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• IMPACT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ IMPACT ================ -->
     <section id="impact" class="section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Impact</h2>
-        <p><span>Five Ways We</span> <span class="description-title">Strengthen Communities</span></p>
+        <p>Five Ways We Strengthen Communities</p>
       </div>
       <div class="container">
 
@@ -1572,7 +1762,7 @@
           <div class="col-md-7">
             <div class="story-box">
               <span style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--green);display:block;margin-bottom:10px;">Member Story</span>
-              <blockquote>"Together, our members are building businesses and creating jobs. From small shops to community enterprises â€” we grow together."</blockquote>
+              <blockquote>"Together, our members are building businesses and creating jobs. From small shops to community enterprises — we grow together."</blockquote>
               <p style="font-size:.84rem;color:var(--gray-600);margin-top:12px;margin-bottom:0;">Fartun Ahmed joined with 5 shares, saved for 18 months, accessed Murabaha financing, and now employs two women from her neighborhood.</p>
             </div>
           </div>
@@ -1623,22 +1813,21 @@
             <div class="imp-card" style="background:var(--blue);border-color:var(--blue);">
               <div class="ii" style="background:rgba(255,255,255,.12);"><i class="fas fa-bullseye" style="color:#fff;"></i></div>
               <h4 style="color:#fff;">Growth Targets</h4>
-              <p style="color:rgba(255,255,255,.8);">$1.5M investment Â· 20,000 members Â· 27 sectors financed across Somalia.</p>
-              <div class="is" style="border-color:rgba(255,255,255,.2);"><div class="isf" style="color:#fff;">$1.5M</div><div class="isl" style="color:rgba(255,255,255,.6);">target investment goal</div></div>
+              <p style="color:rgba(255,255,255,.8);margin-bottom:0;">$1.5M investment<br>20,000 members<br>27 sectors financed across Somalia</p>
             </div>
           </div>
         </div>
       </div>
     </section><!-- /Impact -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• BOARD / LEADERSHIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ BOARD / LEADERSHIP ================ -->
     <section id="board" class="team section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Leadership</h2>
         <p><span>Board of Directors &amp;</span> <span class="description-title">Sharia Board</span></p>
       </div>
       <div class="container">
-        <p class="text-center text-muted mb-4" style="font-size:.88rem;max-width:640px;margin-inline:auto;">The Board of Directors is the highest decision-making body of Sahal SACCO â€” responsible for strategic oversight, governance, and protecting member interests.</p>
+        <p class="text-center text-muted mb-4" style="font-size:.88rem;max-width:640px;margin-inline:auto;">The Board of Directors is the highest decision-making body of Sahal SACCO — responsible for strategic oversight, governance, and protecting member interests.</p>
 
         <h6 class="fw-bold mb-3" style="color:var(--blue);">Board of Directors</h6>
         <div class="row g-3 mb-5">
@@ -1653,7 +1842,7 @@
         </div>
 
         <h6 class="fw-bold mb-2" style="color:var(--green);">Sharia Supervisory Board</h6>
-        <p class="text-muted mb-3" style="font-size:.84rem;">3 independent scholars ensuring all products comply with Islamic financial principles â€” quarterly audits, AAOIFI standards.</p>
+        <p class="text-muted mb-3" style="font-size:.84rem;">3 independent scholars ensuring all products comply with Islamic financial principles — quarterly audits, AAOIFI standards.</p>
         <div class="row g-3">
           <div class="col-md-4"><div class="b-card sharia"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Sheikh Ahmed Abdullahi</h5><span class="rl">Sharia Board Chairman</span><p>Leads compliance reviews and issues formal product rulings.</p></div></div>
           <div class="col-md-4"><div class="b-card sharia"><div class="av"><i class="fas fa-user-circle"></i></div><h5>Sheikh Omar Hassan</h5><span class="rl">Sharia Scholar</span><p>Reviews financing contracts for full compliance.</p></div></div>
@@ -1662,7 +1851,7 @@
       </div>
     </section><!-- /Board -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NEWS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ NEWS ================ -->
     <section id="news" class="section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>News</h2>
@@ -1675,15 +1864,15 @@
           <p>Bringing Sharia-compliant financial services to entrepreneurs, farmers, and families in northeastern Somalia.</p>
         </div>
         <div class="row g-4">
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100"><div class="n-card"><div class="nm"><span class="nc">New Product</span><span class="nd">Feb 28, 2025</span></div><h5>Agricultural Financing Launched</h5><p>Salam contracts for smallholder farmers in Lower Shabelle â€” 100% advance payments for future crop delivery.</p></div></div>
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200"><div class="n-card"><div class="nm"><span class="nc">Event</span><span class="nd">Feb 10, 2025</span></div><h5>Annual Members Meeting</h5><p>Join us March 25 at the Mogadishu head office â€” profit distribution, board elections, and 2024 annual report.</p></div></div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100"><div class="n-card"><div class="nm"><span class="nc">New Product</span><span class="nd">Feb 28, 2025</span></div><h5>Agricultural Financing Launched</h5><p>Salam contracts for smallholder farmers in Lower Shabelle — 100% advance payments for future crop delivery.</p></div></div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200"><div class="n-card"><div class="nm"><span class="nc">Event</span><span class="nd">Feb 10, 2025</span></div><h5>Annual Members Meeting</h5><p>Join us March 25 at the Mogadishu head office — profit distribution, board elections, and 2024 annual report.</p></div></div>
           <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300"><div class="n-card"><div class="nm"><span class="nc">Investment</span><span class="nd">Jan 22, 2025</span></div><h5>Pooled Investment Program Opens</h5><p>Members can now invest in a diversified halal portfolio across agriculture, trade, and real estate. Min: $500.</p></div></div>
           <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400"><div class="n-card"><div class="nm"><span class="nc">Milestone</span><span class="nd">Dec 5, 2024</span></div><h5>400 Members Reached</h5><p>We reached 400 active members and $240,000 in member savings. Thank you to our growing cooperative family.</p></div></div>
         </div>
       </div>
     </section><!-- /News -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MEMBERSHIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ MEMBERSHIP ================ -->
     <section id="membership" class="section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Membership</h2>
@@ -1731,7 +1920,7 @@
       </div>
     </section><!-- /Membership -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ FAQ ================ -->
     <section id="faq" class="faq section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>F.A.Q</h2>
@@ -1750,7 +1939,7 @@
 
               <div class="faq-item">
                 <h3>Are my savings Sharia-compliant?</h3>
-                <div class="faq-content"><p>Yes. All savings are invested in halal activities only. Profits are shared under a Mudaraba profit-sharing model â€” absolutely no interest (riba).</p></div>
+                <div class="faq-content"><p>Yes. All savings are invested in halal activities only. Profits are shared under a Mudaraba profit-sharing model — absolutely no interest (riba).</p></div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
 
@@ -1784,7 +1973,7 @@
       </div>
     </section><!-- /FAQ -->
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ CTA ================ -->
     <section class="cta-strip" aria-labelledby="cta-heading">
       <div class="container">
         <h2 id="cta-heading">Become a Member-Owner Today</h2>
@@ -1794,7 +1983,7 @@
       </div>
     </section>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CONTACT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- ================ CONTACT ================ -->
     <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
@@ -1810,7 +1999,7 @@
                 <div>
                   <h3>Visit Us</h3>
                   <p>KM4, Mogadishu, Somalia</p>
-                  <p style="font-size:.82rem;color:var(--gray-500);margin:0;">Sat â€“ Thu: 8:00 AM â€“ 4:00 PM</p>
+                  <p style="font-size:.82rem;color:var(--gray-500);margin:0;">Sat – Thu: 8:00 AM – 4:00 PM</p>
                 </div>
               </div>
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
@@ -1856,7 +2045,7 @@
                 </div>
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="7" id="message-field" required placeholder="Tell us how we can help youâ€¦"></textarea>
+                  <textarea class="form-control" name="message" rows="7" id="message-field" required placeholder="Tell us how we can help you..."></textarea>
                 </div>
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
@@ -1874,7 +2063,7 @@
 
   </main>
 
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <!-- ================ FOOTER ================ -->
   <footer id="footer" class="footer">
 
     <!-- Trust strip -->
@@ -1903,7 +2092,7 @@
             <p style="margin:4px 0;"><strong>Address:</strong> KM4, Mogadishu, Somalia</p>
             <p style="margin:4px 0;"><strong>Phone:</strong> +252 613888618</p>
             <p style="margin:4px 0;"><strong>Email:</strong> info@sahalsacco.com</p>
-            <p style="margin:4px 0;"><strong>Hours:</strong> Sat â€“ Thu: 8:00 AM â€“ 4:00 PM</p>
+            <p style="margin:4px 0;"><strong>Hours:</strong> Sat – Thu: 8:00 AM – 4:00 PM</p>
           </div>
           <div class="social-links d-flex mt-3">
             <a href="#" aria-label="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
@@ -1960,7 +2149,7 @@
             </div>
           </div>
           <div class="mt-3 p-3" style="background:var(--gray-50);border-radius:8px;font-size:.78rem;color:var(--gray-500);">
-            <strong style="color:var(--blue);">Licensed Â· Member-Owned Â· Sharia-Compliant Â· AAOIFI</strong>
+            <strong style="color:var(--blue);">Licensed · Member-Owned · Sharia-Compliant · AAOIFI</strong>
           </div>
         </div>
 
@@ -1968,7 +2157,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>Â© 2025 <strong class="px-1 sitename"><span class="brand-primary">Sahal</span> <span class="brand-secondary">SACCO</span></strong> All Rights Reserved.</p>
+      <p>© 2025 <strong class="px-1 sitename"><span class="brand-primary">Sahal</span> <span class="brand-secondary">SACCO</span></strong> All Rights Reserved.</p>
       <div style="font-size:.76rem;color:var(--gray-500);margin-top:4px;">
         <a href="#" style="color:var(--gray-500);">Privacy Policy</a> &nbsp;|&nbsp;
         <a href="#" style="color:var(--gray-500);">Terms of Use</a> &nbsp;|&nbsp;

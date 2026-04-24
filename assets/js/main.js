@@ -27,25 +27,50 @@
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
+  function syncMobileNavToggleState() {
+    if (!mobileNavToggleBtn) return;
+    const expanded = document.body.classList.contains('mobile-nav-active');
+    mobileNavToggleBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    mobileNavToggleBtn.setAttribute('aria-label', expanded ? 'Close navigation menu' : 'Open navigation menu');
+  }
+
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
+    syncMobileNavToggleState();
   }
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+    syncMobileNavToggleState();
   }
 
   /**
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+    navmenu.addEventListener('click', (event) => {
+      if (navmenu.classList.contains('toggle-dropdown') || navmenu.getAttribute('href') === '#') {
+        event.preventDefault();
+        return;
+      }
+
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
     });
 
+  });
+
+  document.querySelectorAll('.navmenu .dropdown > a[href="#"]').forEach(dropdownTrigger => {
+    dropdownTrigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      if (window.innerWidth > 1199) return;
+
+      dropdownTrigger.classList.toggle('active');
+      dropdownTrigger.nextElementSibling.classList.toggle('dropdown-active');
+      dropdownTrigger.setAttribute('aria-expanded', dropdownTrigger.classList.contains('active') ? 'true' : 'false');
+    });
   });
 
   /**
@@ -56,6 +81,7 @@
       e.preventDefault();
       this.parentNode.classList.toggle('active');
       this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      this.parentNode.setAttribute('aria-expanded', this.parentNode.classList.contains('active') ? 'true' : 'false');
       e.stopImmediatePropagation();
     });
   });
@@ -215,21 +241,50 @@
   /**
    * Navmenu Scrollspy
    */
-  let navmenulinks = document.querySelectorAll('.navmenu a');
+  let navmenulinks = document.querySelectorAll('.navmenu a[href^="#"]');
+
+  function clearNavmenuState() {
+    document.querySelectorAll('.navmenu a.active, .navmenu a.active-parent').forEach(link => {
+      link.classList.remove('active', 'active-parent');
+    });
+    document.querySelectorAll('.navmenu a[aria-current="page"]').forEach(link => {
+      link.removeAttribute('aria-current');
+    });
+  }
 
   function navmenuScrollspy() {
+    let currentLink = null;
+    const header = document.querySelector('#header');
+    const scrollOffset = (header ? header.offsetHeight : 0) + 24;
+
     navmenulinks.forEach(navmenulink => {
-      if (!navmenulink.hash) return;
+      if (!navmenulink.hash || navmenulink.getAttribute('href') === '#') return;
       let section = document.querySelector(navmenulink.hash);
       if (!section) return;
-      let position = window.scrollY + 200;
+      let position = window.scrollY + scrollOffset;
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
-        navmenulink.classList.add('active');
-      } else {
-        navmenulink.classList.remove('active');
+        currentLink = navmenulink;
       }
-    })
+    });
+
+    clearNavmenuState();
+
+    if (!currentLink && window.scrollY < 80) {
+      currentLink = document.querySelector('.navmenu a[href="#hero"]');
+    }
+
+    if (currentLink) {
+      currentLink.classList.add('active');
+      currentLink.setAttribute('aria-current', 'page');
+
+      const parentDropdown = currentLink.closest('.dropdown');
+      if (parentDropdown) {
+        const dropdownTrigger = parentDropdown.querySelector(':scope > a');
+        if (dropdownTrigger) {
+          dropdownTrigger.classList.add('active-parent');
+        }
+      }
+    }
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
