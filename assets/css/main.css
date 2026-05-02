@@ -197,6 +197,61 @@ h6 {
   color: var(--contrast-color);
 }
 
+@media (max-width: 767px) {
+  .header .topbar .container {
+    justify-content: space-between !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .header .topbar .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .header .topbar .contact-info i {
+    width: auto;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .header .topbar .contact-info i a,
+  .header .topbar .contact-info i span {
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .header .topbar .contact-info i a {
+    display: inline-block;
+  }
+
+  .header .topbar .contact-info i span {
+    display: inline-block;
+  }
+
+  @media (max-width: 480px) {
+    .header .topbar .contact-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .header .topbar .contact-info i {
+      width: 100%;
+    }
+
+    .header .topbar .contact-info i a,
+    .header .topbar .contact-info i span {
+      white-space: normal;
+    }
+  }
+}
+
 .header .branding {
   background-color: var(--background-color);
   min-height: 60px;
